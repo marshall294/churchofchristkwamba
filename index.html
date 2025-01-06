@@ -1,0 +1,349 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Church of Christ Kwamba</title>
+    <style>
+        /* General Styles */
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 0;
+            padding: 0;
+            background: #f4f4f9;
+            color: #333;
+            line-height: 1.6;
+        }
+
+        /* Header Styles */
+        header {
+            background: #0077b6;
+            color: #fff;
+            padding: 20px;  
+            text-align: center;
+        }
+
+        header h1 {
+            font-size: 2.8em;
+            margin: 0;
+            font-weight: bold;
+        }
+
+        header p {
+            font-size: 1.2em;
+            margin-top: 3px;
+        }
+
+        /* Navigation Bar Styles */
+        nav {
+            background: #023e8a;
+            padding: 10px 0;
+        }
+
+        nav ul {
+            display: flex;
+            list-style: none;
+            margin: 0;
+            padding: 0;
+            justify-content: center;
+            gap: 15px;
+        }
+
+        nav ul li {
+            position: relative;
+        }
+
+        nav ul li a {
+            color: white;
+            text-decoration: none;
+            padding: 10px 20px;
+            display: block;
+            border-radius: 5px;
+            transition: background 0.3s ease;
+        }
+
+        nav ul li a:hover {
+            background: #0096c7;
+        }
+
+        nav ul li ul {
+            display: none;
+            position: absolute;
+            top: 100%;
+            left: 50%;
+            transform: translateX(-50%);
+            background-color: #34495e;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            z-index: 10;
+        }
+
+        nav ul li ul li {
+            width: 200px;
+        }
+
+        nav ul li:hover ul {
+            display: block;
+        }
+
+        /* Welcome Section */
+        .welcome {
+            text-align: center;
+            padding: 20px 10px;
+            background: linear-gradient(to right, #00b4d8, #90e0ef);
+            color: #fff;
+        }
+
+        .welcome h2 {
+            font-size: 1.8em;
+            margin-bottom: 20px;
+        }
+
+        .welcome p {
+            font-size: 1.2em;
+            max-width: 800px;
+            margin: auto;
+        }
+
+        /* Announcements Carousel */
+        .carousel {
+            display: flex;
+            overflow-x: scroll;
+            scroll-snap-type: x mandatory;
+            gap: 20px;
+            padding: 20px;
+            background: #f4f4f9;
+        }
+
+        .carousel div {
+            flex: 0 0 75%;
+            background: #fff;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            padding: 20px;
+            scroll-snap-align: center;
+        }
+
+        .carousel div h3 {
+            font-size: 1.5em;
+            margin-bottom: 10px;
+            color: #0077b6;
+        }
+
+        .carousel div p {
+            font-size: 1em;
+            line-height: 1.5;
+        }
+
+        /* Featured Sermon Section */
+        .sermon {
+            padding: 50px 20px;
+            background: #f4f4f9;
+            text-align: center;
+        }
+
+        .sermon h2 {
+            font-size: 2.2em;
+            color: #0077b6;
+            margin-bottom: 15px;
+        }
+
+        .sermon p {
+            font-size: 1.1em;
+            max-width: 700px;
+            margin: 0 auto 20px;
+            color: #555;
+        }
+
+        .sermon a {
+            background: #0077b6;
+            color: white;
+            padding: 10px 20px;
+            text-decoration: none;
+            border-radius: 5px;
+            transition: background 0.3s ease;
+        }
+
+        .sermon a:hover {
+            background: #023e8a;
+        }
+
+        /* Footer */
+        footer {
+            background: #023e8a;
+            color: white;
+            text-align: center;
+            padding: 20px;
+        }
+
+        /* Banner Section */
+        .banner {
+            position: relative;
+            background: url('welcome.jpg') no-repeat center center/cover;
+            height: 400px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: white;
+            text-shadow: 3px 3px 5px rgba(0, 0, 0, 0.6);
+        }
+
+        .banner h2 {
+            font-size: 2.0em;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            text-align: center;
+            animation: fadeIn 2s ease-in-out;
+        }
+
+        /* Media Queries for Responsiveness */
+        @media (max-width: 768px) {
+            nav ul {
+                flex-direction: column;
+                padding: 0;
+            }
+
+            nav ul li {
+                width: 100%;
+                text-align: center;
+            }
+
+            nav ul li a {
+                padding: 12px;
+                font-size: 1.2em;
+            }
+
+            .carousel div {
+                flex: 0 0 90%;
+            }
+
+            .sermon h2 {
+                font-size: 1.8em;
+            }
+
+            .sermon p {
+                font-size: 1em;
+                margin: 0 auto 10px;
+            }
+
+            footer p {
+                font-size: 1em;
+            }
+        }
+
+        @media (max-width: 480px) {
+            header h1 {
+                font-size: 2.2em;
+            }
+
+            .banner h2 {
+                font-size: 1.5em;
+            }
+
+            .welcome h2 {
+                font-size: 1.4em;
+            }
+
+            .welcome p {
+                font-size: 1em;
+                padding: 0 10px;
+            }
+        }
+    </style>
+
+</head>
+<body>
+    <!-- Header Section -->
+    <header>
+        <p>Welcome to a Place of Worship, Faith, and Fellowship</p>
+    </header>
+
+    <!-- Navigation Section -->
+    <nav>
+        <ul>
+            <li><a href="#home">Home</a>
+                <ul>
+                    <li><a href="#about">About Us</a></li>
+                    <li><a href="#events">Events</a></li>
+                    <li><a href="#ministries">Sunday School</a></li>
+                    <li><a href="#volunteer">Evangelism</a></li>
+                    <li><a href="children.html">Children Class</a></li>
+                </ul>
+            </li>
+            <li><a href="#sermons">Sermons</a>
+                <ul>
+                    <li><a href="#latest-sermons">Latest Sermons</a></li>
+                    <li><a href="#podcasts">Podcast Series</a></li>
+                    <li><a href="#live">Live Stream</a></li>
+                    <li><a href="#study-materials">Study Materials</a></li>
+                    <li><a href="#feedback">Feedback</a></li>
+                </ul>
+            </li>
+            <li><a href="#songs">Songs</a>
+                <ul>
+                    <li><a href="#hymns">Hymns</a></li>
+                    <li><a href="#choir">Songs of the Church</a></li>
+                    <li><a href="#worship">Worship Songs</a></li>
+                    <li><a href="#lyrics">Lyrics</a></li>
+                    <li><a href="#playlists">Playlists</a></li>
+                    <li><a href="#music-store">Music Store</a></li>
+                </ul>
+            </li>
+            <li><a href="#requests">Requests</a>
+                <ul>
+                    <li><a href="#prayer">Prayer Requests</a></li>
+                    <li><a href="#testimonies">Testimonies</a></li>
+                    <li><a href="#counseling">Counseling</a></li>
+                    <li><a href="#outreach">Outreach Support</a></li>
+                </ul>
+            </li>
+        </ul>
+    </nav>
+
+    <div class="banner">
+        <h2>Welcome to the Church of Christ Kwamba</h2>
+    </div>
+    <header>
+        <p>Join us in worship, prayer, and community as we seek to grow together in faith and make a difference in the world.</p>
+    </header>
+
+    <!-- Announcements Carousel -->
+    <div class="carousel">
+        <div>
+            <h3>Upcoming Service</h3>
+            <p>Join us this Sunday for a special service led by Minister Emmanuel Oluwatuba at 9:00 AM.</p>
+        </div>
+        <div>
+            <h3>Bible Study</h3>
+            <p>Every Wednesday at 7:00 PM. All are welcome to grow in the Word of God.</p>
+        </div>
+        <div>
+            <h3>Community Outreach</h3>
+            <p>Support our efforts to help the needy in our community. Contact us for details.</p>
+        </div>
+        <div>
+            <h3>Upcoming Service</h3>
+            <p>Join us this Sunday for a special service led by Minister Emmanuel Oluwatuba at 9:00 AM.</p>
+        </div>
+        <div>
+            <h3>Bible Study</h3>
+            <p>Every Wednesday at 7:00 PM. All are welcome to grow in the Word of God.</p>
+        </div>
+        <div>
+            <h3>Community Outreach</h3>
+            <p>Support our efforts to help the needy in our community. Contact us for details.</p>
+        </div>
+    </div>
+
+    <!-- Featured Sermon Section -->
+    <div class="sermon">
+        <h2>Featured Sermon: Walking in Faith</h2>
+        <p>Experience a powerful message about trusting in God's plan and finding strength in His promises.</p>
+        <a href="#sermons">Watch Now</a>
+    </div>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2025 Church of Christ Kwamba. All Rights Reserved.</p>
+    </footer>
+</body>
+</html>

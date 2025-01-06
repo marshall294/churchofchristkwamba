@@ -1,0 +1,964 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bible Lessons for Children</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f5f5f5;
+        }
+        header {
+            background-color: #4CAF50;
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+        .lesson-category {
+            margin: 20px;
+        }
+        .lesson-title {
+            font-size: 1.2em;
+            font-weight: bold;
+            color: #333;
+        }
+        .lesson-description {
+            color: #555;
+        }
+        input[type="text"] {
+            padding: 8px;
+            font-size: 16px;
+            width: 80%;
+            margin-bottom: 10px;
+            border-radius: 4px;
+            border: 1px solid #ccc;
+        }
+        .lesson-list {
+            list-style-type: none;
+            padding: 0;
+        }
+        .lesson-list li {
+            background-color: #fff;
+            margin: 10px 0;
+            padding: 15px;
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+        }
+        .toggle-btn {
+            margin: 10px;
+            padding: 16px 16px;
+            background-color: #4CAF50;
+            color: white;
+            font-size: 20px;
+            border: none;
+            cursor: pointer;
+            border-radius: 4px;
+        }
+        .toggle-btn:hover {
+            background-color: #45a049;
+        }
+        .lesson-link {
+            color: #1a73e8;
+            text-decoration: none;
+        }
+        .lesson-link:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>Bible Lessons for Children</h1>
+    </header>
+
+    <div class="lesson-category">
+        <button class="toggle-btn" onclick="toggleVisibility('oldTestament')">Click to expand and view all Old Testament Lessons</button>
+        <h2>Lessons from the Old Testament</h2>
+        <input type="text" id="oldTestamentSearch" placeholder="Search Old Testament lessons..." onkeyup="filterLessons('oldTestament')" style="display:none;">
+        <ul id="oldTestamentList" class="lesson-list" style="display:none;">
+            <li>
+                <a href="lesson1.html" class="lesson-link">
+                    <div class="lesson-title">Creation Story (Genesis 1–2)</div>
+                    <div class="lesson-description">"God Made Everything."</div>
+                </a>
+            </li>
+            <li>
+                <a href="lesson2.html" class="lesson-link">
+                    <div class="lesson-title">Adam and Eve (Genesis 2–3)</div>
+                    <div class="lesson-description">"Obedience to God."</div>
+                </a>
+            </li>
+            <li>
+                <a href="lesson3.html" class="lesson-link">
+                    <div class="lesson-title">Noah’s Ark (Genesis 6–9)</div>
+                    <div class="lesson-description">"God Keeps His Promises."</div>
+                </a>
+            </li>
+<li>
+    <a href="lesson4.html" class="lesson-link">
+        <div class="lesson-title">Tower of Babel (Genesis 11)</div>
+        <div class="lesson-description">"Unity Through God’s Plan."</div>
+    </a>
+</li>
+<li>
+    <a href="lesson5.html" class="lesson-link">
+        <div class="lesson-title">Abraham’s Promise (Genesis 12–17)</div>
+        <div class="lesson-description">"Faith in God's Covenant."</div>
+    </a>
+</li>
+<li>
+    <a href="lesson6.html" class="lesson-link">
+        <div class="lesson-title">Joseph’s Dreams (Genesis 37)</div>
+        <div class="lesson-description">"Trust in God’s Timing."</div>
+    </a>
+</li>
+<li>
+    <a href="lesson7.html" class="lesson-link">
+        <div class="lesson-title">Moses and the Burning Bush (Exodus 3)</div>
+        <div class="lesson-description">"God Calls Us to His Purpose."</div>
+    </a>
+</li>
+<li>
+    <a href="lesson8.html" class="lesson-link">
+        <div class="lesson-title">The Ten Plagues (Exodus 7–12)</div>
+        <div class="lesson-description">"God’s Power Over All."</div>
+    </a>
+</li>
+<li>
+    <a href="lesson9.html" class="lesson-link">
+        <div class="lesson-title">Crossing the Red Sea (Exodus 14)</div>
+        <div class="lesson-description">"God Leads Us to Safety."</div>
+    </a>
+</li>
+<li>
+    <a href="lesson10.html" class="lesson-link">
+        <div class="lesson-title">The Ten Commandments (Exodus 19–20)</div>
+        <div class="lesson-description">"Living According to God’s Will."</div>
+    </a>
+</li>
+<li>
+    <a href="lesson11.html" class="lesson-link">
+        <div class="lesson-title">Joshua and the Battle of Jericho (Joshua 6)</div>
+        <div class="lesson-description">"Victory Through Faith."</div>
+    </a>
+</li>
+<li>
+    <a href="lesson12.html" class="lesson-link">
+        <div class="lesson-title">Deborah the Judge (Judges 4–5)</div>
+        <div class="lesson-description">"Courage and Leadership in God."</div>
+    </a>
+</li>
+<li>
+    <a href="lesson13.html" class="lesson-link">
+        <div class="lesson-title">Gideon’s Army (Judges 6–7)</div>
+        <div class="lesson-description">"God’s Strength in Our Weakness."</div>
+    </a>
+</li>
+<li>
+    <a href="lesson14.html" class="lesson-link">
+        <div class="lesson-title">Samson and Delilah (Judges 13–16)</div>
+        <div class="lesson-description">"Strength and Consequences of Disobedience."</div>
+    </a>
+</li>
+<li>
+    <a href="lesson15.html" class="lesson-link">
+        <div class="lesson-title">Ruth’s Loyalty (Book of Ruth)</div>
+        <div class="lesson-description">"Faithfulness and God’s Provision."</div>
+    </a>
+</li>
+<li>
+    <a href="lesson16.html" class="lesson-link">
+        <div class="lesson-title">Samuel and the Call of God (1 Samuel 3)</div>
+        <div class="lesson-description">"Listening for God’s Voice."</div>
+    </a>
+</li>
+<li>
+    <a href="lesson17.html" class="lesson-link">
+        <div class="lesson-title">David and Goliath (1 Samuel 17)</div>
+        <div class="lesson-description">"Overcoming Giants with God."</div>
+    </a>
+</li>
+<li>
+    <a href="lesson18.html" class="lesson-link">
+        <div class="lesson-title">David Becomes King (2 Samuel 5)</div>
+        <div class="lesson-description">"God’s Timing in Our Lives."</div>
+    </a>
+</li>
+<li>
+    <a href="lesson19.html" class="lesson-link">
+        <div class="lesson-title">David and Bathsheba (2 Samuel 11–12)</div>
+        <div class="lesson-description">"Repentance and God’s Mercy."</div>
+    </a>
+</li>
+<li>
+    <a href="lesson20.html" class="lesson-link">
+        <div class="lesson-title">Solomon’s Wisdom (1 Kings 3)</div>
+        <div class="lesson-description">"Seeking God’s Guidance."</div>
+    </a>
+</li>
+<li>
+    <a href="lesson21.html" class="lesson-link">
+        <div class="lesson-title">Building the Temple (1 Kings 6)</div>
+        <div class="lesson-description">"God’s Dwelling Place on Earth."</div>
+    </a>
+</li>
+<li>
+    <a href="lesson22.html" class="lesson-link">
+        <div class="lesson-title">Elijah and the Prophets of Baal (1 Kings 18)</div>
+        <div class="lesson-description">"The Power of God Over Idols."</div>
+    </a>
+</li>
+<li>
+    <a href="lesson23.html" class="lesson-link">
+        <div class="lesson-title">Elisha’s Miracles (2 Kings 4–5)</div>
+        <div class="lesson-description">"God’s Power in Action."</div>
+    </a>
+</li>
+<li>
+    <a href="lesson24.html" class="lesson-link">
+        <div class="lesson-title">The Fall of Israel (2 Kings 17)</div>
+        <div class="lesson-description">"The Consequences of Disobedience."</div>
+    </a>
+</li>
+<li>
+    <a href="lesson25.html" class="lesson-link">
+        <div class="lesson-title">Daniel in the Lion’s Den (Daniel 6)</div>
+        <div class="lesson-description">"God’s Protection in the Face of Danger."</div>
+    </a>
+</li>
+<li>
+    <a href="lesson26.html" class="lesson-link">
+        <div class="lesson-title">Shadrach, Meshach, and Abednego (Daniel 3)</div>
+        <div class="lesson-description">"Standing Firm in Faith."</div>
+    </a>
+</li>
+<li>
+    <a href="lesson27.html" class="lesson-link">
+        <div class="lesson-title">The Writing on the Wall (Daniel 5)</div>
+        <div class="lesson-description">"God’s Judgment is Final."</div>
+    </a>
+</li>
+<li>
+    <a href="lesson28.html" class="lesson-link">
+        <div class="lesson-title">Jonah and the Big Fish (Book of Jonah)</div>
+        <div class="lesson-description">"Obeying God’s Call."</div>
+    </a>
+</li>
+<li>
+    <a href="lesson29.html" class="lesson-link">
+        <div class="lesson-title">Nehemiah Rebuilds the Wall (Nehemiah 2–6)</div>
+        <div class="lesson-description">"Restoration and God’s Purpose."</div>
+    </a>
+</li>
+<li>
+    <a href="lesson30.html" class="lesson-link">
+        <div class="lesson-title">Esther Saves Her People (Book of Esther)</div>
+        <div class="lesson-description">"Courage to Stand for What’s Right."</div>
+    </a>
+</li>
+<li>
+    <a href="lesson31.html" class="lesson-link">
+        <div class="lesson-title">Job’s Faithfulness (Book of Job)</div>
+        <div class="lesson-description">"Trusting God Through Suffering."</div>
+    </a>
+</li>
+<li>
+    <a href="lesson32.html" class="lesson-link">
+        <div class="lesson-title">Psalms of David (Book of Psalms)</div>
+        <div class="lesson-description">"Praise and Prayer in All Circumstances."</div>
+    </a>
+</li>
+<li>
+    <a href="lesson33.html" class="lesson-link">
+        <div class="lesson-title">Solomon’s Proverbs (Book of Proverbs)</div>
+        <div class="lesson-description">"Wisdom for Daily Life."</div>
+    </a>
+</li>
+<li>
+    <a href="lesson34.html" class="lesson-link">
+        <div class="lesson-title">Isaiah’s Prophecies (Book of Isaiah)</div>
+        <div class="lesson-description">"Hope and Redemption in God’s Plan."</div>
+    </a>
+</li>
+<li>
+    <a href="lesson35.html" class="lesson-link">
+        <div class="lesson-title">Jeremiah’s Call (Book of Jeremiah)</div>
+        <div class="lesson-description">"Faithfulness to God’s Mission."</div>
+    </a>
+</li>
+<li>
+    <a href="lesson36.html" class="lesson-link">
+        <div class="lesson-title">Ezekiel’s Vision (Book of Ezekiel)</div>
+        <div class="lesson-description">"The Glory of God and the Restoration of Israel."</div>
+    </a>
+</li>
+<li>
+    <a href="lesson37.html" class="lesson-link">
+        <div class="lesson-title">Daniel’s Vision of the Future (Daniel 7)</div>
+        <div class="lesson-description">"God’s Sovereignty Over All Kingdoms."</div>
+    </a>
+</li>
+<li>
+    <a href="lesson38.html" class="lesson-link">
+        <div class="lesson-title">Hosea’s Marriage (Book of Hosea)</div>
+        <div class="lesson-description">"God’s Unfailing Love for His People."</div>
+    </a>
+</li>
+<li>
+    <a href="lesson39.html" class="lesson-link">
+        <div class="lesson-title">Amos’ Call for Justice (Book of Amos)</div>
+        <div class="lesson-description">"Living Justly in the Eyes of God."</div>
+    </a>
+</li>
+<li>
+    <a href="lesson40.html" class="lesson-link">
+        <div class="lesson-title">Jonah’s Reluctance (Book of Jonah)</div>
+        <div class="lesson-description">"God’s Mercy for All Nations."</div>
+    </a>
+</li>
+<li>
+    <a href="lesson41.html" class="lesson-link">
+        <div class="lesson-title">Micah’s Prophecy (Book of Micah)</div>
+        <div class="lesson-description">"Justice, Mercy, and Humility Before God."</div>
+    </a>
+</li>
+<li>
+    <a href="lesson42.html" class="lesson-link">
+        <div class="lesson-title">Nahum’s Prophecy Against Nineveh (Book of Nahum)</div>
+        <div class="lesson-description">"God’s Judgment on the Wicked."</div>
+    </a>
+</li>
+<li>
+    <a href="lesson43.html" class="lesson-link">
+        <div class="lesson-title">Habakkuk’s Questions (Book of Habakkuk)</div>
+        <div class="lesson-description">"Faith in Times of Doubt."</div>
+    </a>
+</li>
+<li>
+    <a href="lesson44.html" class="lesson-link">
+        <div class="lesson-title">Zephaniah’s Warning (Book of Zephaniah)</div>
+        <div class="lesson-description">"God’s Judgment and the Promise of Restoration."</div>
+    </a>
+</li>
+<li>
+    <a href="lesson45.html" class="lesson-link">
+        <div class="lesson-title">Haggai’s Call to Rebuild the Temple (Book of Haggai)</div>
+        <div class="lesson-description">"Prioritizing God’s Work in Our Lives."</div>
+    </a>
+</li>
+<li>
+    <a href="lesson46.html" class="lesson-link">
+        <div class="lesson-title">Zechariah’s Visions (Book of Zechariah)</div>
+        <div class="lesson-description">"Hope for the Future Through God’s Promises."</div>
+    </a>
+</li>
+<li>
+    <a href="lesson47.html" class="lesson-link">
+        <div class="lesson-title">Malachi’s Prophecy (Book of Malachi)</div>
+        <div class="lesson-description">"A Call to Faithfulness and God’s Blessing."</div>
+    </a>
+</li>
+<li>
+    <a href="lesson48.html" class="lesson-link">
+        <div class="lesson-title">The Return from Exile (Ezra 1–2)</div>
+        <div class="lesson-description">"God’s Faithfulness to His People."</div>
+    </a>
+</li>
+<li>
+    <a href="lesson49.html" class="lesson-link">
+        <div class="lesson-title">The Rebuilding of Jerusalem’s Walls (Nehemiah 1–6)</div>
+        <div class="lesson-description">"Perseverance in God’s Mission."</div>
+    </a>
+</li>
+<li>
+    <a href="lesson50.html" class="lesson-link">
+        <div class="lesson-title">The Story of the Maccabees (1 Maccabees)</div>
+        <div class="lesson-description">"Faithfulness in the Face of Persecution."</div>
+    </a>
+</li>
+        </ul>
+    </div>
+
+    <div class="lesson-category">
+        <button class="toggle-btn" onclick="toggleVisibility('newTestament')">Click to expand and view all New Testament Lessons</button>
+        <h2>Lessons from the New Testament</h2>
+        <input type="text" id="newTestamentSearch" placeholder="Search New Testament lessons..." onkeyup="filterLessons('newTestament')" style="display:none;">
+        <ul id="newTestamentList" class="lesson-list" style="display:none;">
+            <li>
+                <a href="lesson4.html" class="lesson-link">
+                    <div class="lesson-title">Birth of Jesus (Luke 2)</div>
+                    <div class="lesson-description">"Jesus is God’s Greatest Gift."</div>
+                </a>
+            </li>
+            <li>
+                <a href="lesson5.html" class="lesson-link">
+                    <div class="lesson-title">Jesus Feeds 5,000 (John 6:1–14)</div>
+                    <div class="lesson-description">"God Provides for Our Needs."</div>
+                </a>
+            </li>
+<li>
+    <a href="lesson6.html" class="lesson-link">
+        <div class="lesson-title">Jesus Heals a Blind Man (John 9:1-12)</div>
+        <div class="lesson-description">"Jesus Brings Light into Our Lives."</div>
+    </a>
+</li>
+<li>
+    <a href="lesson7.html" class="lesson-link">
+        <div class="lesson-title">The Good Samaritan (Luke 10:25-37)</div>
+        <div class="lesson-description">"Love Your Neighbor as Yourself."</div>
+    </a>
+</li>
+<li>
+    <a href="lesson8.html" class="lesson-link">
+        <div class="lesson-title">The Prodigal Son (Luke 15:11-32)</div>
+        <div class="lesson-description">"God’s Forgiveness and Grace."</div>
+    </a>
+</li>
+<li>
+    <a href="lesson9.html" class="lesson-link">
+        <div class="lesson-title">Jesus’ Resurrection (Matthew 28:1-10)</div>
+        <div class="lesson-description">"Jesus Gives Us New Life."</div>
+    </a>
+</li>
+<li>
+    <a href="lesson10.html" class="lesson-link">
+        <div class="lesson-title">The Great Commission (Matthew 28:16-20)</div>
+        <div class="lesson-description">"Go and Make Disciples of All Nations."</div>
+    </a>
+</li>
+<li>
+    <a href="lesson11.html" class="lesson-link">
+        <div class="lesson-title">The Sermon on the Mount (Matthew 5-7)</div>
+        <div class="lesson-description">"Living according to God's Kingdom."</div>
+    </a>
+</li>
+<li>
+    <a href="lesson12.html" class="lesson-link">
+        <div class="lesson-title">The Beatitudes (Matthew 5:3-12)</div>
+        <div class="lesson-description">"Blessings for the Humble and Merciful."</div>
+    </a>
+</li>
+<li>
+    <a href="lesson13.html" class="lesson-link">
+        <div class="lesson-title">Jesus Heals a Paralyzed Man (Mark 2:1-12)</div>
+        <div class="lesson-description">"Jesus Forgives and Heals."</div>
+    </a>
+</li>
+<li>
+    <a href="lesson14.html" class="lesson-link">
+        <div class="lesson-title">Jesus Calms the Storm (Mark 4:35-41)</div>
+        <div class="lesson-description">"Jesus Brings Peace in Times of Trouble."</div>
+    </a>
+</li>
+<li>
+    <a href="lesson15.html" class="lesson-link">
+        <div class="lesson-title">The Parable of the Lost Sheep (Luke 15:1-7)</div>
+        <div class="lesson-description">"God’s Love for the Lost."</div>
+    </a>
+</li>
+<li>
+    <a href="lesson16.html" class="lesson-link">
+        <div class="lesson-title">Jesus Heals a Woman’s Faith (Matthew 9:20-22)</div>
+        <div class="lesson-description">"Faith in Jesus Heals."</div>
+    </a>
+</li>
+<li>
+    <a href="lesson17.html" class="lesson-link">
+        <div class="lesson-title">Jesus Raises Lazarus from the Dead (John 11:1-44)</div>
+        <div class="lesson-description">"Jesus is the Resurrection and the Life."</div>
+    </a>
+</li>
+<li>
+    <a href="lesson18.html" class="lesson-link">
+        <div class="lesson-title">The Last Supper (Luke 22:7-23)</div>
+        <div class="lesson-description">"Jesus Prepares Us for His Sacrifice."</div>
+    </a>
+</li>
+<li>
+    <a href="lesson19.html" class="lesson-link">
+        <div class="lesson-title">Jesus' Prayer in Gethsemane (Matthew 26:36-46)</div>
+        <div class="lesson-description">"Jesus Shows Us How to Pray."</div>
+    </a>
+</li>
+<li>
+    <a href="lesson20.html" class="lesson-link">
+        <div class="lesson-title">Jesus is Arrested (Matthew 26:47-56)</div>
+        <div class="lesson-description">"Jesus Faces Betrayal with Courage."</div>
+    </a>
+</li>
+<li>
+    <a href="lesson21.html" class="lesson-link">
+        <div class="lesson-title">Peter Denies Jesus (Luke 22:54-62)</div>
+        <div class="lesson-description">"Jesus Forgives Our Failures."</div>
+    </a>
+</li>
+<li>
+    <a href="lesson22.html" class="lesson-link">
+        <div class="lesson-title">Jesus is Crucified (Luke 23:26-49)</div>
+        <div class="lesson-description">"Jesus Sacrifices Himself for Our Sins."</div>
+    </a>
+</li>
+<li>
+    <a href="lesson23.html" class="lesson-link">
+        <div class="lesson-title">The Resurrection (Luke 24:1-12)</div>
+        <div class="lesson-description">"Jesus Conquers Death."</div>
+    </a>
+</li>
+<li>
+    <a href="lesson24.html" class="lesson-link">
+        <div class="lesson-title">Jesus Appears to the Disciples (John 20:19-29)</div>
+        <div class="lesson-description">"Jesus Brings Peace and Hope."</div>
+    </a>
+</li>
+<li>
+    <a href="lesson25.html" class="lesson-link">
+        <div class="lesson-title">The Ascension of Jesus (Acts 1:6-11)</div>
+        <div class="lesson-description">"Jesus Returns to Heaven, Promising the Holy Spirit."</div>
+    </a>
+</li>
+<li>
+    <a href="lesson26.html" class="lesson-link">
+        <div class="lesson-title">Pentecost (Acts 2:1-13)</div>
+        <div class="lesson-description">"The Holy Spirit Comes to Empower Believers."</div>
+    </a>
+</li>
+<li>
+    <a href="lesson27.html" class="lesson-link">
+        <div class="lesson-title">The Conversion of Saul (Acts 9:1-19)</div>
+        <div class="lesson-description">"Jesus Changes Lives."</div>
+    </a>
+</li>
+<li>
+    <a href="lesson28.html" class="lesson-link">
+        <div class="lesson-title">Paul and Silas in Prison (Acts 16:16-40)</div>
+        <div class="lesson-description">"God's Power Frees Us."</div>
+    </a>
+</li>
+<li>
+    <a href="lesson29.html" class="lesson-link">
+        <div class="lesson-title">The Fruit of the Spirit (Galatians 5:22-23)</div>
+        <div class="lesson-description">"Living by the Spirit Produces Good Fruit."</div>
+    </a>
+</li>
+<li>
+    <a href="lesson30.html" class="lesson-link">
+        <div class="lesson-title">The Armor of God (Ephesians 6:10-18)</div>
+        <div class="lesson-description">"Be Strong in the Lord and Stand Firm."</div>
+    </a>
+</li>
+<li>
+    <a href="lesson31.html" class="lesson-link">
+        <div class="lesson-title">The Parable of the Sower (Matthew 13:1-23)</div>
+        <div class="lesson-description">"The Word of God Grows in Good Soil."</div>
+    </a>
+</li>
+<li>
+    <a href="lesson32.html" class="lesson-link">
+        <div class="lesson-title">The Parable of the Mustard Seed (Matthew 13:31-32)</div>
+        <div class="lesson-description">"Faith Can Grow into Something Powerful."</div>
+    </a>
+</li>
+<li>
+    <a href="lesson33.html" class="lesson-link">
+        <div class="lesson-title">Jesus Heals a Woman on the Sabbath (Luke 13:10-17)</div>
+        <div class="lesson-description">"Jesus Shows Mercy Over Legalism."</div>
+    </a>
+</li>
+<li>
+    <a href="lesson34.html" class="lesson-link">
+        <div class="lesson-title">Jesus Heals a Centurion's Servant (Matthew 8:5-13)</div>
+        <div class="lesson-description">"Great Faith in God’s Power."</div>
+    </a>
+</li>
+<li>
+    <a href="lesson35.html" class="lesson-link">
+        <div class="lesson-title">The Parable of the Talents (Matthew 25:14-30)</div>
+        <div class="lesson-description">"God Wants Us to Use Our Gifts Wisely."</div>
+    </a>
+</li>
+<li>
+    <a href="lesson36.html" class="lesson-link">
+        <div class="lesson-title">Jesus and the Woman at the Well (John 4:1-26)</div>
+        <div class="lesson-description">"Living Water from Jesus Brings Eternal Life."</div>
+    </a>
+</li>
+<li>
+    <a href="lesson37.html" class="lesson-link">
+        <div class="lesson-title">The Parable of the Rich Fool (Luke 12:13-21)</div>
+        <div class="lesson-description">"Do Not Store Up Treasures on Earth."</div>
+    </a>
+</li>
+<li>
+    <a href="lesson38.html" class="lesson-link">
+        <div class="lesson-title">The Parable of the Ten Virgins (Matthew 25:1-13)</div>
+        <div class="lesson-description">"Be Prepared for the Coming of the Lord."</div>
+    </a>
+</li>
+<li>
+    <a href="lesson39.html" class="lesson-link">
+        <div class="lesson-title">Jesus Heals a Deaf and Mute Man (Mark 7:31-37)</div>
+        <div class="lesson-description">"Jesus Brings Healing and Restoration."</div>
+    </a>
+</li>
+<li>
+    <a href="lesson40.html" class="lesson-link">
+        <div class="lesson-title">The Parable of the Workers in the Vineyard (Matthew 20:1-16)</div>
+        <div class="lesson-description">"God’s Grace is Given Generously."</div>
+    </a>
+</li>
+<li>
+    <a href="lesson41.html" class="lesson-link">
+        <div class="lesson-title">Jesus Heals a Blind Man at Bethsaida (Mark 8:22-26)</div>
+        <div class="lesson-description">"Jesus Opens Our Eyes to His Truth."</div>
+    </a>
+</li>
+<li>
+    <a href="lesson42.html" class="lesson-link">
+        <div class="lesson-title">Jesus Feeds the 4,000 (Matthew 15:32-39)</div>
+        <div class="lesson-description">"God Provides for Our Needs in Abundance."</div>
+    </a>
+</li>
+<li>
+    <a href="lesson43.html" class="lesson-link">
+        <div class="lesson-title">The Transfiguration of Jesus (Matthew 17:1-9)</div>
+        <div class="lesson-description">"Jesus Reveals His Divine Glory."</div>
+    </a>
+</li>
+<li>
+    <a href="lesson44.html" class="lesson-link">
+        <div class="lesson-title">Jesus Heals a Blind Beggar (Mark 10:46-52)</div>
+        <div class="lesson-description">"Faith in Jesus Brings Healing."</div>
+    </a>
+</li>
+<li>
+    <a href="lesson45.html" class="lesson-link">
+        <div class="lesson-title">Jesus and the Little Children (Matthew 19:13-15)</div>
+        <div class="lesson-description">"Let the Children Come to Me."</div>
+    </a>
+</li>
+<li>
+    <a href="lesson46.html" class="lesson-link">
+        <div class="lesson-title">The Parable of the Unforgiving Servant (Matthew 18:21-35)</div>
+        <div class="lesson-description">"Forgive as You Have Been Forgiven."</div>
+    </a>
+</li>
+<li>
+    <a href="lesson47.html" class="lesson-link">
+        <div class="lesson-title">The Parable of the Rich Man and Lazarus (Luke 16:19-31)</div>
+        <div class="lesson-description">"Living for God’s Kingdom, Not Wealth."</div>
+    </a>
+</li>
+<li>
+    <a href="lesson48.html" class="lesson-link">
+        <div class="lesson-title">Jesus Heals a Crippled Woman (Luke 13:10-17)</div>
+        <div class="lesson-description">"Jesus Brings Freedom from Bondage."</div>
+    </a>
+</li>
+<li>
+    <a href="lesson49.html" class="lesson-link">
+        <div class="lesson-title">The Parable of the Rich Man and Zacchaeus (Luke 19:1-10)</div>
+        <div class="lesson-description">"Jesus Came to Seek and Save the Lost."</div>
+    </a>
+</li>
+        </ul>
+    </div>
+
+    <div class="lesson-category">
+        <button class="toggle-btn" onclick="toggleVisibility('thematic')">Click to expand and view all Thematic Lessons</button>
+        <h2>Thematic Lessons</h2>
+        <input type="text" id="thematicSearch" placeholder="Search Thematic lessons..." onkeyup="filterLessons('thematic')" style="display:none;">
+        <ul id="thematicList" class="lesson-list" style="display:none;">
+            <li>
+                <a href="lesson6.html" class="lesson-link">
+                    <div class="lesson-title">God’s Love (John 3:16)</div>
+                    <div class="lesson-description">"For God so loved the world."</div>
+                </a>
+            </li>
+            <li>
+                <a href="lesson7.html" class="lesson-link">
+                    <div class="lesson-title">Faith – Peter Walks on Water (Matthew 14:22–33)</div>
+                    <div class="lesson-description">"Faith in Jesus to Overcome."</div>
+                </a>
+            </li>
+<li>
+    <a href="lesson28.html" class="lesson-link">
+        <div class="lesson-title">Jesus Heals a Woman’s Faith (Matthew 9:20-22)</div>
+        <div class="lesson-description">"Faith in Jesus Brings Healing and Restoration."</div>
+    </a>
+</li>
+<li>
+    <a href="lesson29.html" class="lesson-link">
+        <div class="lesson-title">The Parable of the Lost Sheep (Luke 15:1-7)</div>
+        <div class="lesson-description">"God Seeks Out the Lost."</div>
+    </a>
+</li>
+<li>
+    <a href="lesson30.html" class="lesson-link">
+        <div class="lesson-title">The Beatitudes (Matthew 5:3-12)</div>
+        <div class="lesson-description">"Blessed Are the Poor in Spirit."</div>
+    </a>
+</li>
+<li>
+    <a href="lesson31.html" class="lesson-link">
+        <div class="lesson-title">Jesus and the Centurion’s Faith (Matthew 8:5-13)</div>
+        <div class="lesson-description">"Faith in Jesus Heals from a Distance."</div>
+    </a>
+</li>
+<li>
+    <a href="lesson32.html" class="lesson-link">
+        <div class="lesson-title">The Parable of the Good Samaritan (Luke 10:25-37)</div>
+        <div class="lesson-description">"Love Your Neighbor as Yourself."</div>
+    </a>
+</li>
+<li>
+    <a href="lesson33.html" class="lesson-link">
+        <div class="lesson-title">Jesus Raises Lazarus from the Dead (John 11:1-44)</div>
+        <div class="lesson-description">"Jesus is the Resurrection and the Life."</div>
+    </a>
+</li>
+<li>
+    <a href="lesson34.html" class="lesson-link">
+        <div class="lesson-title">Jesus Heals a Man Born Blind (John 9:1-12)</div>
+        <div class="lesson-description">"Jesus Opens Our Eyes to His Truth."</div>
+    </a>
+</li>
+<li>
+    <a href="lesson35.html" class="lesson-link">
+        <div class="lesson-title">The Parable of the Prodigal Son (Luke 15:11-32)</div>
+        <div class="lesson-description">"God’s Grace and Forgiveness for the Lost."</div>
+    </a>
+</li>
+<li>
+    <a href="lesson36.html" class="lesson-link">
+        <div class="lesson-title">Jesus Calms the Storm (Mark 4:35-41)</div>
+        <div class="lesson-description">"Jesus Brings Peace in the Midst of Chaos."</div>
+    </a>
+</li>
+<li>
+    <a href="lesson37.html" class="lesson-link">
+        <div class="lesson-title">The Parable of the Ten Talents (Matthew 25:14-30)</div>
+        <div class="lesson-description">"Using God’s Gifts for His Glory."</div>
+    </a>
+</li>
+<li>
+    <a href="lesson38.html" class="lesson-link">
+        <div class="lesson-title">Jesus Heals a Man with Leprosy (Matthew 8:1-4)</div>
+        <div class="lesson-description">"Jesus Cleanses the Unclean."</div>
+    </a>
+</li>
+<li>
+    <a href="lesson39.html" class="lesson-link">
+        <div class="lesson-title">The Parable of the Wise and Foolish Builders (Matthew 7:24-27)</div>
+        <div class="lesson-description">"Build Your Life on the Solid Rock."</div>
+    </a>
+</li>
+<li>
+    <a href="lesson40.html" class="lesson-link">
+        <div class="lesson-title">The Great Commission (Matthew 28:16-20)</div>
+        <div class="lesson-description">"Go and Make Disciples of All Nations."</div>
+    </a>
+</li>
+<li>
+    <a href="lesson41.html" class="lesson-link">
+        <div class="lesson-title">Jesus Feeds the 4,000 (Matthew 15:32-39)</div>
+        <div class="lesson-description">"God Provides for Our Needs in Abundance."</div>
+    </a>
+</li>
+<li>
+    <a href="lesson42.html" class="lesson-link">
+        <div class="lesson-title">The Parable of the Workers in the Vineyard (Matthew 20:1-16)</div>
+        <div class="lesson-description">"God’s Generosity Knows No Boundaries."</div>
+    </a>
+</li>
+<li>
+    <a href="lesson43.html" class="lesson-link">
+        <div class="lesson-title">Jesus and the Woman at the Well (John 4:1-26)</div>
+        <div class="lesson-description">"Living Water – Jesus Offers Eternal Life."</div>
+    </a>
+</li>
+<li>
+    <a href="lesson44.html" class="lesson-link">
+        <div class="lesson-title">The Parable of the Rich Fool (Luke 12:13-21)</div>
+        <div class="lesson-description">"Do Not Store Up Treasures on Earth."</div>
+    </a>
+</li>
+<li>
+    <a href="lesson45.html" class="lesson-link">
+        <div class="lesson-title">The Parable of the Ten Virgins (Matthew 25:1-13)</div>
+        <div class="lesson-description">"Be Ready for the Coming of the Bridegroom."</div>
+    </a>
+</li>
+<li>
+    <a href="lesson46.html" class="lesson-link">
+        <div class="lesson-title">Jesus Heals the Sick (Matthew 9:35-38)</div>
+        <div class="lesson-description">"Jesus is Compassionate Toward the Sick."</div>
+    </a>
+</li>
+<li>
+    <a href="lesson8.html" class="lesson-link">
+        <div class="lesson-title">The Good Shepherd (John 10:11-18)</div>
+        <div class="lesson-description">"Jesus Cares for His Sheep."</div>
+    </a>
+</li>
+<li>
+    <a href="lesson9.html" class="lesson-link">
+        <div class="lesson-title">The Power of Prayer (Matthew 7:7-11)</div>
+        <div class="lesson-description">"Ask, Seek, Knock – God Answers."</div>
+    </a>
+</li>
+<li>
+    <a href="lesson10.html" class="lesson-link">
+        <div class="lesson-title">The Great Commandment (Matthew 22:34-40)</div>
+        <div class="lesson-description">"Love God and Love Others."</div>
+    </a>
+</li>
+<li>
+    <a href="lesson11.html" class="lesson-link">
+        <div class="lesson-title">Jesus Heals a Blind Man (Mark 10:46-52)</div>
+        <div class="lesson-description">"Faith Brings Healing."</div>
+    </a>
+</li>
+<li>
+    <a href="lesson12.html" class="lesson-link">
+        <div class="lesson-title">The Parable of the Lost Coin (Luke 15:8-10)</div>
+        <div class="lesson-description">"God Rejoices Over the Lost Being Found."</div>
+    </a>
+</li>
+<li>
+    <a href="lesson13.html" class="lesson-link">
+        <div class="lesson-title">The Parable of the Lost Son (Luke 15:11-32)</div>
+        <div class="lesson-description">"God’s Forgiveness and Grace."</div>
+    </a>
+</li>
+<li>
+    <a href="lesson14.html" class="lesson-link">
+        <div class="lesson-title">The Golden Rule (Matthew 7:12)</div>
+        <div class="lesson-description">"Treat Others as You Want to Be Treated."</div>
+    </a>
+</li>
+<li>
+    <a href="lesson15.html" class="lesson-link">
+        <div class="lesson-title">The Parable of the Good Samaritan (Luke 10:25-37)</div>
+        <div class="lesson-description">"Love Your Neighbor as Yourself."</div>
+    </a>
+</li>
+<li>
+    <a href="lesson16.html" class="lesson-link">
+        <div class="lesson-title">The Fruit of the Spirit (Galatians 5:22-23)</div>
+        <div class="lesson-description">"Living by the Spirit Produces Good Fruit."</div>
+    </a>
+</li>
+<li>
+    <a href="lesson17.html" class="lesson-link">
+        <div class="lesson-title">The Parable of the Talents (Matthew 25:14-30)</div>
+        <div class="lesson-description">"Using God’s Gifts Wisely."</div>
+    </a>
+</li>
+<li>
+    <a href="lesson18.html" class="lesson-link">
+        <div class="lesson-title">Jesus Heals a Paralytic (Mark 2:1-12)</div>
+        <div class="lesson-description">"Faith in Jesus Brings Healing."</div>
+    </a>
+</li>
+<li>
+    <a href="lesson19.html" class="lesson-link">
+        <div class="lesson-title">Jesus Feeds the 5,000 (John 6:1-14)</div>
+        <div class="lesson-description">"God Provides for Our Needs."</div>
+    </a>
+</li>
+<li>
+    <a href="lesson20.html" class="lesson-link">
+        <div class="lesson-title">The Parable of the Unforgiving Servant (Matthew 18:21-35)</div>
+        <div class="lesson-description">"Forgive Others as God Forgives You."</div>
+    </a>
+</li>
+<li>
+    <a href="lesson21.html" class="lesson-link">
+        <div class="lesson-title">The Parable of the Workers in the Vineyard (Matthew 20:1-16)</div>
+        <div class="lesson-description">"God’s Grace is for All."</div>
+    </a>
+</li>
+<li>
+    <a href="lesson22.html" class="lesson-link">
+        <div class="lesson-title">The Parable of the Sower (Luke 8:4-15)</div>
+        <div class="lesson-description">"Hearing God’s Word and Letting It Grow."</div>
+    </a>
+</li>
+<li>
+    <a href="lesson23.html" class="lesson-link">
+        <div class="lesson-title">The Parable of the Mustard Seed (Matthew 13:31-32)</div>
+        <div class="lesson-description">"Faith as Small as a Mustard Seed."</div>
+    </a>
+</li>
+<li>
+    <a href="lesson24.html" class="lesson-link">
+        <div class="lesson-title">Jesus and the Rich Young Ruler (Matthew 19:16-30)</div>
+        <div class="lesson-description">"Following Jesus Requires Wholehearted Commitment."</div>
+    </a>
+</li>
+<li>
+    <a href="lesson25.html" class="lesson-link">
+        <div class="lesson-title">The Parable of the Pearl of Great Price (Matthew 13:45-46)</div>
+        <div class="lesson-description">"The Kingdom of God is Worth Everything."</div>
+    </a>
+</li>
+<li>
+    <a href="lesson26.html" class="lesson-link">
+        <div class="lesson-title">The Parable of the Ten Virgins (Matthew 25:1-13)</div>
+        <div class="lesson-description">"Be Prepared for the Coming of the Lord."</div>
+    </a>
+</li>
+<li>
+    <a href="lesson27.html" class="lesson-link">
+        <div class="lesson-title">Jesus Heals a Blind Man (John 9:1-12)</div>
+        <div class="lesson-description">"Jesus Brings Spiritual and Physical Sight."</div>
+    </a>
+</li>
+
+        </ul>
+    </div>
+
+    <footer>
+        <p style="text-align: center; padding: 20px; background-color: #4CAF50; color: white;">© 2025 Church of Christ Kwamba Children Lessons.</p>
+    </footer>
+
+    <script>
+        // Function to filter lessons based on search input
+        function filterLessons(category) {
+            const searchTerm = document.getElementById(category + 'Search').value.toLowerCase();
+            const lessonList = document.getElementById(category + 'List').getElementsByTagName('li');
+            
+            for (let i = 0; i < lessonList.length; i++) {
+                const lessonTitle = lessonList[i].getElementsByClassName('lesson-title')[0].textContent.toLowerCase();
+                const lessonDescription = lessonList[i].getElementsByClassName('lesson-description')[0].textContent.toLowerCase();
+                if (lessonTitle.includes(searchTerm) || lessonDescription.includes(searchTerm)) {
+                    lessonList[i].style.display = '';
+                } else {
+                    lessonList[i].style.display = 'none';
+                }
+            }
+        }
+
+        // Function to toggle visibility of lesson categories
+        function toggleVisibility(category) {
+            const lessonList = document.getElementById(category + 'List');
+            const searchBar = document.getElementById(category + 'Search');
+            const button = document.querySelector(`button[onclick="toggleVisibility('${category}')"]`);
+            
+            if (lessonList.style.display === 'none' || lessonList.style.display === '') {
+                lessonList.style.display = 'block';
+                searchBar.style.display = 'block';  // Show the search bar
+                button.textContent = `Click to collapse ${category.charAt(0).toUpperCase() + category.slice(1)} Lessons`;
+            } else {
+                lessonList.style.display = 'none';
+                searchBar.style.display = 'none';  // Hide the search bar
+                button.textContent = `Click to expand and view all ${category.charAt(0).toUpperCase() + category.slice(1)} Lessons`;
+            }
+        }
+    </script>
+</body>
+</html>
