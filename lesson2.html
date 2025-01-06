@@ -68,6 +68,20 @@
             background-color: #4CAF50;
             color: white;
         }
+        .video-container {
+            position: relative;
+            padding-bottom: 56.25%; /* Aspect ratio 16:9 (100 * 9 / 16 = 56.25) */
+            height: 0;
+            overflow: hidden;
+            max-width: 100%;
+        }
+        .video-container iframe {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+        }
     </style>
 </head>
 <body>
@@ -94,14 +108,17 @@
         <!-- Media Section -->
         <div class="media-section">
             <h2>Watch and Learn</h2>
-            <p>Watch the video and look at the images to help understand the lesson:</p>
-            <video controls>
-                <source src="adam-eve-story.mp4" type="video/mp4">
-                Your browser does not support the video tag.
-            </video>
-            <img src="adam-eve-garden.jpg" alt="Adam and Eve in the Garden of Eden">
+            <p>Here is a video and images to help you understand the Creation Story:</p>
+    <div class="video-container">
+        <iframe src="https://www.youtube.com/watch?app=desktop&v=0CcR2PILQUE&t=0s" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    </div>
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQImdGdZqYwDUl3P33w9BsEnQ-p7Ljt27nRUg&s" alt="The Seven Days of Creation">
         </div>
-
+            <img src="https://bibleforslackers.wordpress.com/wp-content/uploads/2014/10/adam_eve-hiding.gif" alt="The Seven Days of Creation">
+        </div>
+                <img src="https://www.ellenwhite.info/images/chapt-illus/PP/RH-EveTemptation2.jpg" alt="The Seven Days of Creation">
+        </div>
+    
         <!-- Assessment Section -->
         <div class="assessment-section">
             <h2>Assessment Questions</h2>
