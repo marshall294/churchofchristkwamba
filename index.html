@@ -1,4 +1,4 @@
-﻿<!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -105,22 +105,27 @@
         }
 
         /* Announcements Carousel */
+        .carousel-wrapper {
+            position: relative;
+            width: 100%;
+            overflow: hidden;
+        }
+
         .carousel {
             display: flex;
-            overflow-x: scroll;
-            scroll-snap-type: x mandatory;
+            animation: scrollLeft 30s linear infinite;
             gap: 20px;
-            padding: 20px;
-            background: #f4f4f9;
+            flex-wrap: nowrap;
         }
 
         .carousel div {
-            flex: 0 0 75%;
+            flex: 0 0 20%;
             background: #fff;
             border-radius: 10px;
             box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
             padding: 20px;
-            scroll-snap-align: center;
+            min-width: 250px; /* Ensure each carousel item is at least 250px wide */
+            scroll-snap-align: start;
         }
 
         .carousel div h3 {
@@ -132,6 +137,16 @@
         .carousel div p {
             font-size: 1em;
             line-height: 1.5;
+        }
+
+        /* Keyframe Animation for Continuous Scrolling */
+        @keyframes scrollLeft {
+            0% {
+                transform: translateX(0);
+            }
+            100% {
+                transform: translateX(-100%);
+            }
         }
 
         /* Featured Sermon Section */
@@ -178,13 +193,15 @@
         /* Banner Section */
         .banner {
             position: relative;
-            background: url('welcome.jpg') no-repeat center center/cover;
             height: 400px;
             display: flex;
             justify-content: center;
             align-items: center;
             color: white;
             text-shadow: 3px 3px 5px rgba(0, 0, 0, 0.6);
+            background-size: cover;
+            background-position: center;
+            animation: fadeIn 2s ease-in-out;
         }
 
         .banner h2 {
@@ -192,7 +209,6 @@
             text-transform: uppercase;
             letter-spacing: 2px;
             text-align: center;
-            animation: fadeIn 2s ease-in-out;
         }
 
         /* Media Queries for Responsiveness */
@@ -212,9 +228,6 @@
                 font-size: 1.2em;
             }
 
-            .carousel div {
-                flex: 0 0 90%;
-            }
 
             .sermon h2 {
                 font-size: 1.8em;
@@ -246,6 +259,38 @@
             .welcome p {
                 font-size: 1em;
                 padding: 0 10px;
+            }
+        }
+
+        /* Keyframes for Fading In */
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+            }
+            to {
+                opacity: 1;
+            }
+        }
+        /* Media Queries for Responsiveness */
+        @media (max-width: 1024px) {
+            .carousel div {
+                flex: 0 0 50%; /* On medium screens (tablet), take up 50% width */
+            }
+        }
+
+        @media (max-width: 768px) {
+            .carousel div {
+                flex: 0 0 40%;
+            }
+        }
+
+        @media (max-width: 480px) {
+            .carousel div {
+                flex: 0 0 40%;
+            }
+
+            .carousel-wrapper {
+                padding: 0 10px; /* Ensure padding is on the sides for small screens */
             }
         }
     </style>
@@ -299,9 +344,11 @@
         </ul>
     </nav>
 
-    <div class="banner">
+    <!-- Banner Section with JavaScript to Change Backgrounds -->
+    <div class="banner" id="banner">
         <h2>Welcome to the Church of Christ Kwamba</h2>
     </div>
+
     <header>
         <p>Join us in worship, prayer, and community as we seek to grow together in faith and make a difference in the world.</p>
     </header>
@@ -328,10 +375,6 @@
             <h3>Bible Study</h3>
             <p>Every Wednesday at 7:00 PM. All are welcome to grow in the Word of God.</p>
         </div>
-        <div>
-            <h3>Community Outreach</h3>
-            <p>Support our efforts to help the needy in our community. Contact us for details.</p>
-        </div>
     </div>
 
     <!-- Featured Sermon Section -->
@@ -345,5 +388,34 @@
     <footer>
         <p>&copy; 2025 Church of Christ Kwamba. All Rights Reserved.</p>
     </footer>
+
+    <script>
+        const backgrounds = [
+            'url("image1.jpg")',
+            'url("image2.jpg")',
+            'url("image3.jpg")',
+            'url("image4.jpg")',
+            'url("image5.jpg")',
+            'url("image6.jpg")',
+            'url("image7.jpg")',
+            'url("image8.jpg")',
+            'url("image9.jpg")',
+            'url("image10.jpg")'
+        ];
+
+        let currentIndex = 0;
+
+        function changeBackground() {
+            const banner = document.getElementById('banner');
+            banner.style.backgroundImage = backgrounds[currentIndex];
+            currentIndex = (currentIndex + 1) % backgrounds.length;
+        }
+
+        // Change background every 5 seconds
+        setInterval(changeBackground, 5000);
+
+        // Set initial background
+        changeBackground();
+    </script>
 </body>
 </html>
