@@ -6,10 +6,15 @@
     <title>Church of Christ Kwamba</title>
     <style>
         /* General Styles */
-        body {
-            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        body, html {
             margin: 0;
             padding: 0;
+            width: 100%;
+            overflow-x: hidden; /* Prevent horizontal scroll */
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
             background: #f4f4f9;
             color: #333;
             line-height: 1.6;
@@ -228,7 +233,6 @@
                 font-size: 1.2em;
             }
 
-
             .sermon h2 {
                 font-size: 1.8em;
             }
@@ -271,16 +275,26 @@
                 opacity: 1;
             }
         }
-        /* Media Queries for Responsiveness */
+
         @media (max-width: 1024px) {
             .carousel div {
                 flex: 0 0 50%; /* On medium screens (tablet), take up 50% width */
+            }
+
+            .carousel-wrapper {
+                position: relative;
+                width: auto;
             }
         }
 
         @media (max-width: 768px) {
             .carousel div {
                 flex: 0 0 40%;
+            }
+
+            .carousel-wrapper {
+                position: relative;
+                width: auto;
             }
         }
 
@@ -290,11 +304,11 @@
             }
 
             .carousel-wrapper {
-                padding: 0 10px; /* Ensure padding is on the sides for small screens */
+                position: relative;
+                width: auto;
             }
         }
     </style>
-
 </head>
 <body>
     <!-- Header Section -->
