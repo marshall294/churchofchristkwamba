@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sunday School Lessons</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f5f5f5;
+        }
+        header {
+            background-color: #4CAF50;
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+        .lesson-category {
+            margin: 20px;
+        }
+        .lesson-title {
+            font-size: 1.2em;
+            font-weight: bold;
+            color: #333;
+        }
+        .lesson-description {
+            color: #555;
+        }
+        input[type="text"] {
+            padding: 8px;
+            font-size: 16px;
+            width: 80%;
+            margin-bottom: 10px;
+            border-radius: 4px;
+            border: 1px solid #ccc;
+        }
+        .lesson-list {
+            list-style-type: none;
+            padding: 0;
+        }
+        .lesson-list li {
+            background-color: #fff;
+            margin: 10px 0;
+            padding: 15px;
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+        }
+        .toggle-btn {
+            margin: 10px;
+            padding: 16px 16px;
+            background-color: #4CAF50;
+            color: white;
+            font-size: 20px;
+            border: none;
+            cursor: pointer;
+            border-radius: 4px;
+        }
+        .toggle-btn:hover {
+            background-color: #45a049;
+        }
+        .lesson-link {
+            color: #1a73e8;
+            text-decoration: none;
+        }
+        .lesson-link:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>Sunday School Lessons</h1>
+    </header>
+
+    <div class="lesson-category">
+        <button class="toggle-btn" onclick="toggleVisibility('subtheme1')">Click to expand and view all Sunday School Lessons 1</button>
+        <h2>Equipped for Every Good Work</h2>
+        <input type="text" id="subtheme1Search" placeholder="Search Subtheme 1 lessons..." onkeyup="filterLessons('subtheme1')" style="display:none;">
+        <ul id="subtheme1List" class="lesson-list" style="display:none;">
+            <li>
+                <a href="lesson1.html" class="lesson-link">
+                    <div class="lesson-title">Introduction by Bro. Emmanuel Oluwatoba</div>
+                    <div class="lesson-description">"Foundations of Being Equipped."</div>
+                </a>
+            </li>
+<li>
+    <a href="lesson2.html" class="lesson-link">
+        <div class="lesson-title">Equipped by God’s Design by Bro. Emmanuel Oluwatoba</div>
+        <div class="lesson-description">"God's design for equipping His people."</div>
+    </a>
+</li>
+<li>
+    <a href="lesson3.html" class="lesson-link">
+        <div class="lesson-title">The Word as Our Guide by Bro. Marshall Jacob</div>
+        <div class="lesson-description">"Guided by the Word of God."</div>
+    </a>
+</li>
+<li>
+    <a href="lesson4.html" class="lesson-link">
+        <div class="lesson-title">Faith as the Fuel for Good Works by Bro. Godwin Easy</div>
+        <div class="lesson-description">"Faith drives our actions for good works."</div>
+    </a>
+</li>
+<li>
+    <a href="lesson5.html" class="lesson-link">
+        <div class="lesson-title">Obedience: The Path to Being Equipped by Bro. Amos Slyvester</div>
+        <div class="lesson-description">"The role of obedience in spiritual equipping."</div>
+    </a>
+</li>
+<li>
+    <a href="lesson6.html" class="lesson-link">
+        <div class="lesson-title">Living a Life of Purpose by Bro Emmanuel Oluwatoba</div>
+        <div class="lesson-description">"Living with intention and purpose in Christ."</div>
+    </a>
+</li>
+<li>
+    <a href="lesson7.html" class="lesson-link">
+        <div class="lesson-title">Renewed Minds, Transformed Lives by Bro. Emmanuel Oluwatoba</div>
+        <div class="lesson-description">"The power of a renewed mind in transformation."</div>
+    </a>
+</li>
+<li>
+    <a href="lesson8.html" class="lesson-link">
+        <div class="lesson-title">Strengthened Through Trials by Bro. Nelson Obot</div>
+        <div class="lesson-description">"Finding strength in the midst of trials."</div>
+    </a>
+</li>
+<li>
+    <a href="lesson9.html" class="lesson-link">
+        <div class="lesson-title">Walking by the Spirit by Bro. Emmanuel Oluwatoba</div>
+        <div class="lesson-description">"Living life led by the Spirit."</div>
+    </a>
+</li>
+<li>
+    <a href="lesson10.html" class="lesson-link">
+        <div class="lesson-title">Living in Humility by Bro. Moses Amos</div>
+        <div class="lesson-description">"The power and blessing of humility."</div>
+    </a>
+</li>
+<li>
+    <a href="lesson11.html" class="lesson-link">
+        <div class="lesson-title">Sharpening Through Fellowship by Bro. Ola Ibrahim</div>
+        <div class="lesson-description">"The importance of fellowship in growth."</div>
+    </a>
+</li>
+<li>
+    <a href="lesson12.html" class="lesson-link">
+        <div class="lesson-title">Anchored by Prayer by Bro. Amos Slyvester</div>
+        <div class="lesson-description">"The foundation of a strong prayer life."</div>
+    </a>
+</li>
+<li>
+    <a href="lesson13.html" class="lesson-link">
+        <div class="lesson-title">Talents for Ministry by Bro. Emmanuel Oluwatoba</div>
+        <div class="lesson-description">"Using our talents for God’s work."</div>
+    </a>
+</li>
+<li>
+    <a href="lesson14.html" class="lesson-link">
+        <div class="lesson-title">The Armor of God by Bro. Marshall Jacob</div>
+        <div class="lesson-description">"Equipping ourselves with God’s armor."</div>
+    </a>
+</li>
+<li>
+    <a href="lesson15.html" class="lesson-link">
+        <div class="lesson-title">The Discipline of Stewardship by Bro. Emmanuel Oluwatoba</div>
+        <div class="lesson-description">"Faithful stewardship in ministry."</div>
+    </a>
+</li>
+<li>
+    <a href="lesson16.html" class="lesson-link">
+        <div class="lesson-title">Faith Over Fear by Bro. Godwin Easy</div>
+        <div class="lesson-description">"Overcoming fear through faith."</div>
+    </a>
+</li>
+<li>
+    <a href="lesson17.html" class="lesson-link">
+        <div class="lesson-title">Victory Over Temptation by Bro. Amos Slyvester</div>
+        <div class="lesson-description">"Defeating temptation with God's strength."</div>
+    </a>
+</li>
+<li>
+    <a href="lesson18.html" class="lesson-link">
+        <div class="lesson-title">Persevering Through Opposition by Bro. Nelson Obot</div>
+        <div class="lesson-description">"Enduring opposition with faith."</div>
+    </a>
+</li>
+<li>
+    <a href="lesson19.html" class="lesson-link">
+        <div class="lesson-title">Embracing Forgiveness by Bro. Marshall Jacob</div>
+        <div class="lesson-description">"The power and need for forgiveness."</div>
+    </a>
+</li>
+<li>
+    <a href="lesson20.html" class="lesson-link">
+        <div class="lesson-title">Ambassadors for Christ by Bro. James Maka</div>
+        <div class="lesson-description">"Representing Christ in all things."</div>
+    </a>
+</li>
+<li>
+    <a href="lesson21.html" class="lesson-link">
+        <div class="lesson-title">Shining as Lights in the World by Bro. Kayode Ajao</div>
+        <div class="lesson-description">"Being a light in a dark world."</div>
+    </a>
+</li>
+<li>
+    <a href="lesson22.html" class="lesson-link">
+        <div class="lesson-title">Multiplying Through Discipleship by Bro. Emmanuel Oluwatoba</div>
+        <div class="lesson-description">"Making disciples and multiplying the faith."</div>
+    </a>
+</li>
+<li>
+    <a href="lesson23.html" class="lesson-link">
+        <div class="lesson-title">Running the Race with Endurance by Bro. Moses Amos</div>
+        <div class="lesson-description">"Enduring through life’s challenges."</div>
+    </a>
+</li>
+<li>
+    <a href="lesson24.html" class="lesson-link">
+        <div class="lesson-title">Conclusion by Bro Emmanuel Oluwatoba</div>
+        <div class="lesson-description">"Final thoughts on being equipped in Christ."</div>
+    </a>
+</li>
+
+        </ul>
+    </div>
+
+    <footer>
+        <p style="text-align: center; padding: 20px; background-color: #4CAF50; color: white;">© 2025 Church of Christ Lessons.</p>
+    </footer>
+
+    <script>
+        // Function to filter lessons based on search input
+        function filterLessons(category) {
+            const searchTerm = document.getElementById(category + 'Search').value.toLowerCase();
+            const lessonList = document.getElementById(category + 'List').getElementsByTagName('li');
+            
+            for (let i = 0; i < lessonList.length; i++) {
+                const lessonTitle = lessonList[i].getElementsByClassName('lesson-title')[0].textContent.toLowerCase();
+                const lessonDescription = lessonList[i].getElementsByClassName('lesson-description')[0].textContent.toLowerCase();
+                if (lessonTitle.includes(searchTerm) || lessonDescription.includes(searchTerm)) {
+                    lessonList[i].style.display = '';
+                } else {
+                    lessonList[i].style.display = 'none';
+                }
+            }
+        }
+
+        // Function to toggle visibility of lesson categories
+        function toggleVisibility(category) {
+            const lessonList = document.getElementById(category + 'List');
+            const searchBar = document.getElementById(category + 'Search');
+            const button = document.querySelector(`button[onclick="toggleVisibility('${category}')"]`);
+            
+            if (lessonList.style.display === 'none' || lessonList.style.display === '') {
+                lessonList.style.display = 'block';
+                searchBar.style.display = 'block';  // Show the search bar
+                button.textContent = `Click to collapse ${category.charAt(0).toUpperCase() + category.slice(1)} Lessons`;
+            } else {
+                lessonList.style.display = 'none';
+                searchBar.style.display = 'none';  // Hide the search bar
+                button.textContent = `Click to expand and view all ${category.charAt(0).toUpperCase() + category.slice(1)} Lessons`;
+            }
+        }
+    </script>
+</body>
+</html>
