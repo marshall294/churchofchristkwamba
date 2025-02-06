@@ -4,78 +4,28 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Abraham’s Promise - Faith in God's Covenant</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
     <style>
-        * {
-            box-sizing: border-box;
-        }
-
-        body {
-            font-family: 'Arial', sans-serif;
-            margin: 0;
-            padding: 0;
-            background-color: #f4f4f9;
-            color: #333;
-            overflow-x: hidden;
-        }
-
-        header {
-            background-color: #FF6347;
-            color: white;
-            padding: 20px;
-            text-align: center;
-        }
-
-        h1, h2 {
-            margin: 0;
-        }
-
-        .container {
-            margin: 20px auto;
-            padding: 20px;
-            max-width: 900px;
-            background-color: white;
-            border-radius: 10px;
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-        }
-
-        .media-section, .lesson-section, .assessment-section {
-            margin: 20px 0;
-        }
-
-        .media-section img, 
-        .media-section video, 
-        .media-section iframe {
-            display: block;
-            max-width: 100%;
-            height: auto;
-            margin: 10px 0;
-            border-radius: 10px;
-        }
-
-        ul {
-            list-style-type: none;
-            padding: 0;
-        }
-
-        li {
-            margin: 10px 0;
-            padding: 10px;
-            background-color: #f9f9f9;
-            border: 1px solid #ddd;
-            border-radius: 5px;
-        }
-
-        li:hover {
-            background-color: #f1f1f1;
-        }
-
-        footer {
-            text-align: center;
-            padding: 20px;
-            margin-top: 20px;
-            background-color: #FF6347;
-            color: white;
-        }
+        * { box-sizing: border-box; }
+        body { font-family: 'Arial', sans-serif; margin: 0; padding: 0; background-color: #f4f4f9; color: #333; }
+        header { background-color: #6A5ACD; color: white; padding: 20px; text-align: center; }
+        .container { margin: 20px auto; padding: 20px; max-width: 900px; background-color: white; border-radius: 10px; box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); }
+        h2, h3 { color: #6A5ACD; }
+        ul { list-style-type: none; padding: 0; }
+        li { margin: 10px 0; padding: 10px; background-color: #f9f9f9; border: 1px solid #ddd; border-radius: 5px; }
+        .download-btn { display: block; text-align: center; padding: 10px; margin-top: 20px; background-color: #28a745; color: white; text-decoration: none; border-radius: 5px; cursor: pointer; }
+        .download-btn:hover { background-color: #218838; }
+        * { box-sizing: border-box; }
+        body { font-family: 'Arial', sans-serif; margin: 0; padding: 0; background-color: #f4f4f9; color: #333; overflow-x: hidden; }
+        header { background-color: #6A5ACD; color: white; padding: 20px; text-align: center; }
+        h1, h2 { margin: 0; }
+        .container { margin: 20px auto; padding: 20px; max-width: 900px; background-color: white; border-radius: 10px; box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); }
+        .media-section, .lesson-section, .assessment-section { margin: 20px 0; }
+        .media-section img, .media-section video, .media-section iframe { display: block; max-width: 100%; height: auto; margin: 10px 0; border-radius: 10px; }
+        ul { list-style-type: none; padding: 0; }
+        li { margin: 10px 0; padding: 10px; background-color: #f9f9f9; border: 1px solid #ddd; border-radius: 5px; }
+        li:hover { background-color: #f1f1f1; }
+        footer { text-align: center; padding: 20px; margin-top: 20px; background-color: #6A5ACD; color: white; }
     </style>
 </head>
 <body>
@@ -87,69 +37,189 @@
     <div class="container">
         <!-- Lesson Content -->
         <div class="lesson-section">
-            <h2>Lesson: Abraham’s Faith in God’s Covenant</h2>
-            <p>God called Abraham to leave his home and travel to a land He would show him. God promised Abraham that He would make him the father of many nations and bless all the families of the earth through him. Even though Abraham and his wife Sarah were old and had no children, Abraham trusted God. God made a covenant with Abraham, giving him the sign of circumcision and promising him countless descendants. Abraham’s faith in God’s promises inspires us to trust in God’s plans, even when they seem impossible.</p>
+            <h2>Lesson: Abraham’s Promise (Genesis 12–17)</h2>
+            <p>God made a covenant with Abraham, promising to bless him and make his descendants a great nation. Despite challenges, Abraham trusted God's promises, showing great faith. Through Abraham, God began the plan of salvation for the world. In Genesis 12-17, we see God's call to Abraham, the covenant of circumcision, and the promise of a child in Abraham's old age, which all demonstrate God's faithfulness to His word.</p>
             <ul>
-                <li><b>The Call:</b> God called Abraham to leave his home and follow Him.</li>
-                <li><b>The Promise:</b> God promised Abraham that he would be the father of many nations.</li>
-                <li><b>The Covenant:</b> God made a covenant with Abraham and gave him the sign of circumcision.</li>
-                <li><b>The Test of Faith:</b> Abraham trusted God, even though he and Sarah were old and childless.</li>
-                <li><b>The Fulfillment:</b> God blessed Abraham with a son, Isaac, and fulfilled His promises.</li>
+                <li><b>God's Call:</b> God called Abraham to leave his country and promised to make him the father of a great nation.  
+                    <ul>
+                        <li>Genesis 12:1-2 - "The Lord had said to Abram, 'Go from your country, your people and your father’s household to the land I will show you. I will make you into a great nation, and I will bless you; I will make your name great, and you will be a blessing.'" </li>
+                        <li>Explanation: Abraham was called to trust in God's promises and step out in faith, leaving everything familiar behind.</li>
+                    </ul>
+                </li>
+                <li><b>The Promise of Descendants:</b> God promises Abraham numerous descendants, even though he is old and childless.  
+                    <ul>
+                        <li>Genesis 15:5 - "He took him outside and said, 'Look up at the sky and count the stars—if indeed you can count them.' Then he said to him, 'So shall your offspring be.'" </li>
+                        <li>Explanation: God reassured Abraham that his descendants would be countless, symbolized by the stars in the sky.</li>
+                    </ul>
+                </li>
+                <li><b>Covenant of Circumcision:</b> God establishes a covenant with Abraham and requires circumcision as a sign of this covenant.  
+                    <ul>
+                        <li>Genesis 17:10-11 - "This is my covenant with you and your descendants after you, the covenant you are to keep: Every male among you shall be circumcised. You are to undergo circumcision, and it will be the sign of the covenant between me and you." </li>
+                        <li>Explanation: Circumcision is a physical symbol of Abraham’s faith and obedience to God's covenant.</li>
+                    </ul>
+                </li>
+                <li><b>The Promise of Isaac:</b> Despite being 100 years old, God promises Abraham that he will have a son named Isaac.  
+                    <ul>
+                        <li>Genesis 17:19 - "Then God said, 'Yes, but your wife Sarah will bear you a son, and you will call him Isaac. I will establish my covenant with him as an everlasting covenant for his descendants after him.'" </li>
+                        <li>Explanation: God fulfills His promise by giving Abraham and Sarah a son, Isaac, through whom God's covenant will continue.</li>
+                    </ul>
+                </li>
             </ul>
         </div>
 
         <!-- Media Section -->
         <div class="media-section">
             <h2>Watch and Learn</h2>
-            <p>Here is a video and images to help you understand the story of Abraham’s Promise:</p>
-            <iframe width="560" height="315" src="https://www.youtube.com/embed/LKU_4-r5rrA" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-            <img src="https://upload.wikimedia.org/wikipedia/commons/7/7a/Abraham_and_the_Stars.jpg" alt="Abraham looks at the stars, God’s promise">
-            <img src="https://bibleproject.com/wp-content/uploads/2019/08/abraham-and-the-promise-genesis-12-1.jpg" alt="God’s covenant with Abraham">
+            <p>Here is a video and images to help you understand God's covenant with Abraham:</p>
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/Wv9usf6BrEY?start=5" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            <img src="https://scripturalthinking.com/wp-content/uploads/2024/11/abram-abraham.webp" alt="From abram to abraham">
+            <img src="https://cms-imgp.jw-cdn.org/img/p/1101978067/univ/art/1101978067_univ_lsr_lg.jpg" alt="Abraham and Isaac">
+            <img src="https://cdn.prod.website-files.com/5b8fd783bee52c8fb59b1fac/5f99916b1e851f0d857b564d_abraham-egypt5.jpeg" alt="Abraham and Sarah">
         </div>
 
-        <!-- Assessment Section -->
-        <div class="assessment-section">
-            <h2>Assessment Questions</h2>
-            <p>Answer the questions based on your age group:</p>
+        <h2>Assessment Questions</h2>
 
-            <!-- Questions for 3-5 years old -->
-            <h3>3-5 Years Old</h3>
-            <ul>
-                <li>What did God ask Abraham to do?</li>
-                <li>What did God promise Abraham?</li>
-                <li>What did Abraham trust God to do?</li>
-                <li>What did God give Abraham to show His promise?</li>
-            </ul>
+        <!-- 3-5 Years Old -->
+        <h3>3-5 Years Old</h3>
+        <ul>
+            <li>1. Who did God speak to in the story?</li>
+            <li>2. What promise did God make to Abraham?</li>
+            <li>3. What did God ask Abraham to do?</li>
+            <li>4. How old was Abraham when he had a son?</li>
+            <li>5. What was the name of Abraham’s son?</li>
+            <li>6. What did God say Abraham’s family would be like?</li>
+            <li>7. Why did Abraham trust God?</li>
+        </ul>
 
-            <!-- Questions for 6-7 years old -->
-            <h3>6-7 Years Old</h3>
-            <ul>
-                <li>Why did God call Abraham to leave his home?</li>
-                <li>What was the sign of God’s covenant with Abraham?</li>
-                <li>How did God show He keeps His promises to Abraham?</li>
-            </ul>
+        <!-- 6-7 Years Old -->
+        <h3>6-7 Years Old</h3>
+        <ul>
+            <li>1. What did God promise Abraham?</li>
+            <li>2. How did God show His faithfulness to Abraham?</li>
+            <li>3. What was the sign of God’s covenant with Abraham?</li>
+            <li>4. Why did Abraham and Sarah laugh when they heard they would have a son?</li>
+            <li>5. How many descendants did God promise Abraham?</li>
+            <li>6. Where did God ask Abraham to go?</li>
+            <li>7. What can we learn from Abraham’s trust in God?</li>
+        </ul>
 
-            <!-- Questions for 8-10 years old -->
-            <h3>8-10 Years Old</h3>
-            <ul>
-                <li>What does Abraham’s faith teach us about trusting God?</li>
-                <li>How did God’s covenant with Abraham show His faithfulness?</li>
-                <li>What can we learn about God’s promises through this story?</li>
-            </ul>
+        <!-- 8-10 Years Old -->
+        <h3>8-10 Years Old</h3>
+        <ul>
+            <li>1. What does the covenant with Abraham teach us about God’s promises?</li>
+            <li>2. How did Abraham’s faith affect his relationship with God?</li>
+            <li>3. How is the covenant of circumcision significant for Abraham and his descendants?</li>
+            <li>4. How can we trust God’s promises in our own lives?</li>
+            <li>5. What does it mean to be obedient to God’s commands like Abraham?</li>
+            <li>6. How did God fulfill His promise to Abraham?</li>
+            <li>7. How does Abraham’s story relate to our faith today?</li>
+        </ul>
 
-            <!-- Questions for 11-15 years old -->
-            <h3>11-15 Years Old</h3>
-            <ul>
-                <li>Why is Abraham’s faith important in understanding God’s covenant?</li>
-                <li>How does this story show God’s ability to do the impossible?</li>
-                <li>What does this story teach us about being faithful to God’s calling?</li>
-                <li>How does the story of Abraham inspire us to trust God in uncertain times?</li>
-            </ul>
-        </div>
+        <!-- 11-15 Years Old -->
+        <h3>11-15 Years Old</h3>
+        <ul>
+            <li>1. What was the significance of God’s covenant with Abraham?</li>
+            <li>2. How did Abraham’s obedience reflect his faith in God’s promises?</li>
+            <li>3. How does the story of Abraham help us understand God’s plan for salvation?</li>
+            <li>4. How is Abraham’s story related to Jesus Christ and His coming?</li>
+            <li>5. In what ways can we apply Abraham’s faith and trust in God to our own lives?</li>
+            <li>6. What role did Isaac play in God’s covenant with Abraham?</li>
+            <li>7. How can we trust God even when we don’t understand His plan for us?</li>
+        </ul>
+
+        <!-- Download PDF -->
+        <button class="download-btn" onclick="generatePDF()">Download Worksheet (PDF)</button>
     </div>
 
     <footer>
-        <p>&copy; 2025 Children's Ministry | Abraham’s Promise Lesson</p>
+        <p>&copy; 2025 Faith-Based Learning. All Rights Reserved.</p>
     </footer>
+
+
+
+<script>
+    function generatePDF() {
+        const { jsPDF } = window.jspdf;
+        const doc = new jsPDF();
+
+        // Title
+        doc.setFont("times", "bold");
+        doc.setFontSize(18);
+        doc.text("Abraham’s Promise - Faith in God's Covenant", 20, 20);
+        doc.text("Genesis 12–17", 20, 30);
+
+        let yPosition = 40;
+        const categories = [
+            { title: "3-5 Years Old", questions: [
+                "1. Who did God speak to in the story?",
+                "2. What promise did God make to Abraham?",
+                "3. What did God ask Abraham to do?",
+                "4. How old was Abraham when he had a son?",
+                "5. What was the name of Abraham’s son?",
+                "6. What did God say Abraham’s family would be like?",
+                "7. Why did Abraham trust God?"
+            ]},
+            { title: "6-7 Years Old", questions: [
+                "1. What did God promise Abraham?",
+                "2. How did God show His faithfulness to Abraham?",
+                "3. What was the sign of God’s covenant with Abraham?",
+                "4. Why did Abraham and Sarah laugh when they heard they would have a son?",
+                "5. How many descendants did God promise Abraham?",
+                "6. Where did God ask Abraham to go?",
+                "7. What can we learn from Abraham’s trust in God?"
+            ]},
+            { title: "8-10 Years Old", questions: [
+                "1. What does the covenant with Abraham teach us about God’s promises?",
+                "2. How did Abraham’s faith affect his relationship with God?",
+                "3. How is the covenant of circumcision significant for Abraham and his descendants?",
+                "4. Why is Abraham’s trust in God important for us today?",
+                "5. How did God fulfill His promise to Abraham?",
+                "6. What does it mean to be obedient to God’s commands like Abraham?",
+                "7. How can we trust God’s promises in our own lives?"
+            ]},
+            { title: "11-15 Years Old", questions: [
+                "1. What was the significance of God’s covenant with Abraham?",
+                "2. How did Abraham’s obedience reflect his faith in God’s promises?",
+                "3. How does the story of Abraham help us understand God’s plan for salvation?",
+                "4. How is Abraham’s story related to Jesus Christ and His coming?",
+                "5. In what ways can we apply Abraham’s faith and trust in God to our own lives?",
+                "6. What role did Isaac play in God’s covenant with Abraham?",
+                "7. How can we trust God even when we don’t understand His plan for us?"
+            ]}
+        ];
+
+        // Set max width for text wrapping
+        const maxWidth = 180;
+
+        // Add questions to the PDF
+        categories.forEach(category => {
+            doc.setFont("times", "bold");
+            doc.text(category.title, 20, yPosition);
+            yPosition += 10;
+            doc.setFont("times", "normal");
+
+            category.questions.forEach(q => {
+                // Split question text to fit within the max width
+                const lines = doc.splitTextToSize(q, maxWidth);
+                
+                // Add the lines to the PDF
+                doc.text(lines, 25, yPosition);
+                yPosition += lines.length * 8;  // Adjust y-position based on number of lines
+                
+                // Check if the y-position exceeds page height and add a new page if necessary
+                if (yPosition > 270) {
+                    doc.addPage();
+                    yPosition = 20;
+                }
+            });
+            yPosition += 5;
+        });
+
+        // Save the PDF
+        doc.save("Abrahams_Promise_Assessment.pdf");
+    }
+</script>
+
+
 </body>
 </html>
