@@ -4,152 +4,213 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Joseph’s Dreams - Trust in God’s Timing</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
     <style>
-        * {
-            box-sizing: border-box;
-        }
-
-        body {
-            font-family: 'Arial', sans-serif;
-            margin: 0;
-            padding: 0;
-            background-color: #f4f4f9;
-            color: #333;
-            overflow-x: hidden;
-        }
-
-        header {
-            background-color: #4682B4;
-            color: white;
-            padding: 20px;
-            text-align: center;
-        }
-
-        h1, h2 {
-            margin: 0;
-        }
-
-        .container {
-            margin: 20px auto;
-            padding: 20px;
-            max-width: 900px;
-            background-color: white;
-            border-radius: 10px;
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-        }
-
-        .media-section, .lesson-section, .assessment-section {
-            margin: 20px 0;
-        }
-
-        .media-section img, 
-        .media-section video, 
-        .media-section iframe {
-            display: block;
-            max-width: 100%;
-            height: auto;
-            margin: 10px 0;
-            border-radius: 10px;
-        }
-
-        ul {
-            list-style-type: none;
-            padding: 0;
-        }
-
-        li {
-            margin: 10px 0;
-            padding: 10px;
-            background-color: #f9f9f9;
-            border: 1px solid #ddd;
-            border-radius: 5px;
-        }
-
-        li:hover {
-            background-color: #f1f1f1;
-        }
-
-        footer {
-            text-align: center;
-            padding: 20px;
-            margin-top: 20px;
-            background-color: #4682B4;
-            color: white;
-        }
+        * { box-sizing: border-box; }
+        body { font-family: 'Arial', sans-serif; margin: 0; padding: 0; background-color: #f4f4f9; color: #333; }
+        header { background-color: #6A5ACD; color: white; padding: 20px; text-align: center; }
+        .container { margin: 20px auto; padding: 20px; max-width: 900px; background-color: white; border-radius: 10px; box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); }
+        h2, h3 { color: #6A5ACD; }
+        ul { list-style-type: none; padding: 0; }
+        li { margin: 10px 0; padding: 10px; background-color: #f9f9f9; border: 1px solid #ddd; border-radius: 5px; }
+        .download-btn { display: block; text-align: center; padding: 10px; margin-top: 20px; background-color: #28a745; color: white; text-decoration: none; border-radius: 5px; cursor: pointer; }
+        .download-btn:hover { background-color: #218838; }
+        * { box-sizing: border-box; }
+        body { font-family: 'Arial', sans-serif; margin: 0; padding: 0; background-color: #f4f4f9; color: #333; overflow-x: hidden; }
+        header { background-color: #6A5ACD; color: white; padding: 20px; text-align: center; }
+        h1, h2 { margin: 0; }
+        .container { margin: 20px auto; padding: 20px; max-width: 900px; background-color: white; border-radius: 10px; box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); }
+        .media-section, .lesson-section, .assessment-section { margin: 20px 0; }
+        .media-section img, .media-section video, .media-section iframe { display: block; max-width: 100%; height: auto; margin: 10px 0; border-radius: 10px; }
+        ul { list-style-type: none; padding: 0; }
+        li { margin: 10px 0; padding: 10px; background-color: #f9f9f9; border: 1px solid #ddd; border-radius: 5px; }
+        li:hover { background-color: #f1f1f1; }
+        footer { text-align: center; padding: 20px; margin-top: 20px; background-color: #6A5ACD; color: white; }
     </style>
 </head>
 <body>
     <header>
-        <h1>Joseph’s Dreams</h1>
-        <p>"Trust in God’s Timing"</p>
-    </header>
+<h1>Joseph’s Dreams</h1>
+<p>"Trust in God’s Timing"</p>
 
-    <div class="container">
-        <!-- Lesson Content -->
-        <div class="lesson-section">
-            <h2>Lesson: Joseph’s Dreams</h2>
-            <p>Joseph was one of Jacob’s 12 sons and was greatly loved by his father. This caused his brothers to become jealous. Joseph had two dreams where he saw his family bowing down to him, which made his brothers even more upset. Out of jealousy, they sold him into slavery in Egypt. Despite this, Joseph trusted God, and over time, God elevated him to a position of power. Joseph’s story reminds us to trust in God’s plan and timing, even in difficult circumstances.</p>
-            <ul>
-                <li><b>The Dreams:</b> Joseph dreamed that his brothers and family would bow down to him.</li>
-                <li><b>The Jealousy:</b> Joseph’s brothers became jealous of him and sold him into slavery.</li>
-                <li><b>The Trials:</b> Joseph faced challenges as a slave and prisoner in Egypt.</li>
-                <li><b>The Redemption:</b> God raised Joseph to a position of power in Egypt, where he saved many lives during a famine.</li>
-                <li><b>The Reunion:</b> Joseph forgave his brothers and trusted in God’s timing.</li>
-            </ul>
-        </div>
+</header>
+
+<div class="container">
+    <!-- Lesson Content -->
+    <div class="lesson-section">
+        <h2>Lesson: Joseph’s Dreams</h2>
+        <p>Joseph was one of Jacob’s 12 sons and was greatly loved by his father. This caused his brothers to become jealous. Joseph had two dreams where he saw his family bowing down to him, which made his brothers even more upset. Out of jealousy, they sold him into slavery in Egypt. Despite this, Joseph trusted God, and over time, God elevated him to a position of power. Joseph’s story reminds us to trust in God’s plan and timing, even in difficult circumstances.</p>
+        
+        <ul>
+            <li><b>The Dreams:</b> Joseph dreamed that his brothers and family would bow down to him. 
+                <p><i>Genesis 37:5-7</i>: "Joseph had a dream, and when he told it to his brothers, they hated him all the more. He said to them, 'Listen to this dream I had: We were binding sheaves of grain out in the field when suddenly my sheaf rose and stood upright, while your sheaves gathered around mine and bowed down to it.'"</p>
+            </li>
+            
+            <li><b>The Jealousy:</b> Joseph’s brothers became jealous of him and sold him into slavery.
+                <p><i>Genesis 37:11</i>: "His brothers were jealous of him, but his father kept the matter in mind." 
+                <br><i>Genesis 37:28</i>: "So when the Midianite merchants came by, his brothers pulled Joseph up out of the cistern and sold him for twenty shekels of silver to the Ishmaelites, who took him to Egypt."</p>
+            </li>
+
+            <li><b>The Trials:</b> Joseph faced challenges as a slave and prisoner in Egypt.
+                <p><i>Genesis 39:2-4</i>: "The Lord was with Joseph so that he prospered, and he lived in the house of his Egyptian master. When his master saw that the Lord was with him and that the Lord gave him success in everything he did, Joseph found favor in his eyes and became his attendant." 
+                <br><i>Genesis 39:20-21</i>: "Joseph’s master took him and put him in prison, the place where the king’s prisoners were confined. But while Joseph was there in the prison, the Lord was with him; he showed him kindness and granted him favor in the eyes of the prison warden."</p>
+            </li>
+
+            <li><b>The Redemption:</b> God raised Joseph to a position of power in Egypt, where he saved many lives during a famine.
+                <p><i>Genesis 41:14-16</i>: "So Pharaoh sent for Joseph, and he was quickly brought from the dungeon. When he had shaved and changed his clothes, he came before Pharaoh. Pharaoh said to Joseph, 'I had a dream, and no one can interpret it. But I have heard it said of you that when you hear a dream you can interpret it.' 'I cannot do it,' Joseph replied to Pharaoh, 'but God will give Pharaoh the answer he desires.'"</p>
+            </li>
+
+            <li><b>The Reunion:</b> Joseph forgave his brothers and trusted in God’s timing.
+                <p><i>Genesis 45:4-5</i>: "Then Joseph said to his brothers, 'Come close to me.' When they had done so, he said, 'I am your brother Joseph, the one you sold into Egypt! And now, do not be distressed and do not be angry with yourselves for selling me here, because it was to save lives that God sent me ahead of you.'" 
+                <br><i>Genesis 50:20</i>: "You intended to harm me, but God intended it for good to accomplish what is now being done, the saving of many lives."</p>
+            </li>
+        </ul>
 
         <!-- Media Section -->
         <div class="media-section">
             <h2>Watch and Learn</h2>
             <p>Here is a video and images to help you understand the story of Joseph’s Dreams:</p>
-            <iframe width="560" height="315" src="https://www.youtube.com/embed/0SCAXrEmRRA" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-            <img src="https://cdn.shopify.com/s/files/1/2081/8163/products/joseph_dreams-1024_1024x1024.jpg" alt="Joseph and his dreams">
-            <img src="https://i.pinimg.com/originals/22/94/5f/22945f52867138db812b88884b257c30.jpg" alt="Joseph being sold into slavery">
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/Aqk-5gvyHCM" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            <img src="https://www.inspirationalchristians.org/images/joseph-dreams-1.jpg" alt="Joseph and his dreams">
+            <img src="https://livingwordoutreachchurch.com/wp-content/uploads/2023/05/image468.jpg" alt="Joseph being sold into slavery">
+            <img src="https://www.storyforkids.org/content/images/2024/06/Joseph-and-His-Colorful-Coat---Bible-Story-for-Kids---Betrayal.webp" alt="Joseph and his dreams">
+            <img src="https://static1.squarespace.com/static/585448efd1758e8eb89fef72/5e1de880b387c1091db4dda3/60007db1b51e0434a68c6b8b/1710286143980/4_3_BibleStoryPictures.jpg?format=1500w" alt="Joseph being sold into slavery">
         </div>
 
-        <!-- Assessment Section -->
-        <div class="assessment-section">
-            <h2>Assessment Questions</h2>
-            <p>Answer the questions based on your age group:</p>
+        <h2>Assessment Questions</h2>
 
-            <!-- Questions for 3-5 years old -->
-            <h3>3-5 Years Old</h3>
-            <ul>
-                <li>What did Joseph dream about?</li>
-                <li>Why were Joseph’s brothers upset with him?</li>
-                <li>What did Joseph’s brothers do to him?</li>
-                <li>How did God help Joseph?</li>
-            </ul>
+       <!-- 3-5 Years Old -->
+<h3>3-5 Years Old</h3>
+<ul>
+    <li>1. What did Joseph dream about?</li>
+    <li>2. Who did Joseph tell his dreams to?</li>
+    <li>3. What did his brothers think about his dreams?</li>
+    <li>4. What did Joseph's father say about the dreams?</li>
+    <li>5. How did Joseph’s brothers react to his dreams?</li>
+    <li>6. Why was Joseph's coat so special?</li>
+    <li>7. Why should we trust God’s plans for us?</li>
+</ul>
 
-            <!-- Questions for 6-7 years old -->
-            <h3>6-7 Years Old</h3>
-            <ul>
-                <li>Why were Joseph’s dreams special?</li>
-                <li>How did Joseph show trust in God?</li>
-                <li>What happened to Joseph in Egypt?</li>
-            </ul>
+<!-- 6-7 Years Old -->
+<h3>6-7 Years Old</h3>
+<ul>
+    <li>1. Why did Joseph’s brothers feel jealous of him?</li>
+    <li>2. What did Joseph’s dreams show about his future?</li>
+    <li>3. How did Joseph’s father react to his dreams?</li>
+    <li>4. What did Joseph’s dreams teach us about God’s plan?</li>
+    <li>5. What is God's timing in Joseph's story?</li>
+    <li>6. Why did Joseph’s brothers want to harm him?</li>
+    <li>7. How can we trust God when we don't understand His plans?</li>
+</ul>
 
-            <!-- Questions for 8-10 years old -->
-            <h3>8-10 Years Old</h3>
-            <ul>
-                <li>What do Joseph’s dreams teach us about God’s plans?</li>
-                <li>How did Joseph handle the challenges he faced?</li>
-                <li>What can we learn from Joseph forgiving his brothers?</li>
-            </ul>
+<!-- 8-10 Years Old -->
+<h3>8-10 Years Old</h3>
+<ul>
+    <li>1. How did Joseph’s dreams come true later in his life?</li>
+    <li>2. What role did patience play in Joseph’s story?</li>
+    <li>3. Why did God allow Joseph to go through difficult times?</li>
+    <li>4. How did Joseph show forgiveness to his brothers?</li>
+    <li>5. What does Joseph’s story teach us about trusting God’s timing?</li>
+    <li>6. How can we trust God when things seem unfair?</li>
+    <li>7. How can we learn from Joseph’s perseverance and faith?</li>
+</ul>
 
-            <!-- Questions for 11-15 years old -->
-            <h3>11-15 Years Old</h3>
-            <ul>
-                <li>Why is it important to trust God’s timing, as Joseph did?</li>
-                <li>What role did Joseph’s faith play in his success?</li>
-                <li>How can Joseph’s story inspire us to forgive others?</li>
-                <li>What does this story teach us about overcoming adversity with God’s help?</li>
-            </ul>
-        </div>
-    </div>
+<!-- 11-15 Years Old -->
+<h3>11-15 Years Old</h3>
+<ul>
+    <li>1. How did Joseph’s story reflect God’s sovereignty?</li>
+    <li>2. What lessons about trust in God's timing can we learn from Joseph's life?</li>
+    <li>3. How can we relate Joseph’s dreams to God's purpose for our lives?</li>
+    <li>4. Why did Joseph’s brothers initially reject his dreams?</li>
+    <li>5. How does Joseph’s story show the importance of forgiveness?</li>
+    <li>6. How can we keep our faith in God when faced with adversity?</li>
+    <li>7. What does Romans 8:28 teach us about trusting in God’s plan for our lives?</li>
+</ul>
 
-    <footer>
-        <p>&copy; 2025 Children's Ministry | Joseph’s Dreams Lesson</p>
-    </footer>
+    <!-- Button to trigger PDF download -->
+    <button id="downloadBtn" onclick="generatePDF()">Download PDF</button>
+
+    <script>
+        function generatePDF() {
+            const { jsPDF } = window.jspdf;
+            const doc = new jsPDF();
+
+            // Title
+            doc.setFont("times", "bold");
+            doc.setFontSize(18);
+            doc.text("Joseph’s Dreams - Trust in God’s Timing", 20, 20);
+            doc.text("Genesis 37:1-11, Genesis 41:14-30", 20, 30);
+
+            let yPosition = 40;
+            const categories = [
+                { title: "3-5 Years Old", questions: [
+                    "1. What did Joseph dream about?",
+                    "2. Who did Joseph tell his dreams to?",
+                    "3. What did his brothers think about his dreams?",
+                    "4. What did Joseph's father say about the dreams?",
+                    "5. How did Joseph’s brothers react to his dreams?",
+                    "6. Why was Joseph's coat so special?",
+                    "7. Why should we trust God’s plans for us?"
+                ]},
+                { title: "6-7 Years Old", questions: [
+                    "1. Why did Joseph’s brothers feel jealous of him?",
+                    "2. What did Joseph’s dreams show about his future?",
+                    "3. How did Joseph’s father react to his dreams?",
+                    "4. What did Joseph’s dreams teach us about God’s plan?",
+                    "5. What is God's timing in Joseph's story?",
+                    "6. Why did Joseph’s brothers want to harm him?",
+                    "7. How can we trust God when we don't understand His plans?"
+                ]},
+                { title: "8-10 Years Old", questions: [
+                    "1. How did Joseph’s dreams come true later in his life?",
+                    "2. What role did patience play in Joseph’s story?",
+                    "3. Why did God allow Joseph to go through difficult times?",
+                    "4. How did Joseph show forgiveness to his brothers?",
+                    "5. What does Joseph’s story teach us about trusting God’s timing?",
+                    "6. How can we trust God when things seem unfair?",
+                    "7. How can we learn from Joseph’s perseverance and faith?"
+                ]},
+                { title: "11-15 Years Old", questions: [
+                    "1. How did Joseph’s story reflect God’s sovereignty?",
+                    "2. What lessons about trust in God's timing can we learn from Joseph's life?",
+                    "3. How can we relate Joseph’s dreams to God's purpose for our lives?",
+                    "4. Why did Joseph’s brothers initially reject his dreams?",
+                    "5. How does Joseph’s story show the importance of forgiveness?",
+                    "6. How can we keep our faith in God when faced with adversity?",
+                    "7. What does Romans 8:28 teach us about trusting in God’s plan for our lives?"
+                ]}
+            ];
+
+        // Set max width for text wrapping
+        const maxWidth = 180;
+
+        // Add questions to the PDF
+        categories.forEach(category => {
+            doc.setFont("times", "bold");
+            doc.text(category.title, 20, yPosition);
+            yPosition += 10;
+            doc.setFont("times", "normal");
+
+            category.questions.forEach(q => {
+                // Split question text to fit within the max width
+                const lines = doc.splitTextToSize(q, maxWidth);
+                
+                // Add the lines to the PDF
+                doc.text(lines, 25, yPosition);
+                yPosition += lines.length * 8;  // Adjust y-position based on number of lines
+                
+                // Check if the y-position exceeds page height and add a new page if necessary
+                if (yPosition > 270) {
+                    doc.addPage();
+                    yPosition = 20;
+                }
+            });
+            yPosition += 5;
+        });
+
+        // Save the PDF
+        doc.save("Abrahams_Promise_Assessment.pdf");
+    }
+</script>
 </body>
 </html>
