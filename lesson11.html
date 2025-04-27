@@ -16,6 +16,16 @@
         .download-btn { display: block; text-align: center; padding: 10px; margin-top: 20px; background-color: #28a745; color: white; text-decoration: none; border-radius: 5px; cursor: pointer; }
         .download-btn:hover { background-color: #218838; }
         footer { text-align: center; padding: 20px; margin-top: 20px; background-color: #6A5ACD; color: white; }
+/* Media section container */
+.media-section {
+    max-width: 900px;  /* Limit the container width */
+    margin: 20px auto;
+    padding: 20px;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
 /* Style for the images to be responsive */
 .responsive-image {
     width: 100%;
@@ -24,6 +34,7 @@
     margin: 10px 0;
     display: block; /* Ensures images are block-level and centered */
     max-width: 100%; /* Prevents images from overflowing the container */
+    object-fit: contain; /* Ensures that the aspect ratio is maintained */
 }
 
 /* Ensure video and other media is responsive as well */
@@ -33,6 +44,7 @@
     max-width: 560px; /* Ensure the video doesn't stretch too wide */
     margin: 10px 0;
 }
+
 
     </style>
 </head>
