@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Joshua and the Battle of Jericho - Victory Through Faith</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
+    <style>
+        * { box-sizing: border-box; }
+        body { font-family: 'Arial', sans-serif; margin: 0; padding: 0; background-color: #f4f4f9; color: #333; }
+        header { background-color: #6A5ACD; color: white; padding: 20px; text-align: center; }
+        .container { margin: 20px auto; padding: 20px; max-width: 900px; background-color: white; border-radius: 10px; box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); }
+        h2, h3 { color: #6A5ACD; }
+        ul { list-style-type: none; padding: 0; }
+        li { margin: 10px 0; padding: 10px; background-color: #f9f9f9; border: 1px solid #ddd; border-radius: 5px; }
+        .download-btn { display: block; text-align: center; padding: 10px; margin-top: 20px; background-color: #28a745; color: white; text-decoration: none; border-radius: 5px; cursor: pointer; }
+        .download-btn:hover { background-color: #218838; }
+        footer { text-align: center; padding: 20px; margin-top: 20px; background-color: #6A5ACD; color: white; }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Joshua and the Battle of Jericho</h1>
+        <p>"Victory Through Faith"</p>
+    </header>
+    <div class="container">
+        <div class="lesson-section">
+            <h2>Lesson: Joshua and the Battle of Jericho</h2>
+            <p>In Joshua 6, God commands Joshua to lead the Israelites around the fortified city of Jericho for six days. Each day, they march around the city once. On the seventh day, they march seven times, blow their trumpets, and shout. By God's miraculous power, the walls of Jericho collapse, giving Israel victory. This teaches us that through faith and obedience, we can achieve great victories in God’s plan.</p>
+
+            <ul>
+                <li><b>God’s Command:</b> God instructed Joshua with a very specific plan to take Jericho. <br><i>Joshua 6:2-5</i></li>
+                <li><b>Israel’s Obedience:</b> The Israelites obeyed every command faithfully without questioning. <br><i>Joshua 6:6-14</i></li>
+                <li><b>Victory by Faith:</b> On the seventh day, after their obedience and faith, the walls fell. <br><i>Joshua 6:15-20</i></li>
+                <li><b>Rahab’s Rescue:</b> Rahab and her family were saved because of her faith. <br><i>Joshua 6:22-25</i></li>
+                <li><b>God’s Power Revealed:</b> God showed His power in delivering Jericho into their hands. <br><i>Joshua 6:27</i></li>
+            </ul>
+
+            <div class="media-section">
+                <h2>Watch and Learn</h2>
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/U6k0C-Q0wKA?start=5" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                <img src="https://cms-imgp.jw-cdn.org/img/p/1101978100/univ/art/1101978100_univ_lsr_lg.jpg" alt="Joshua and the Battle of Jericho">
+                <img src="https://faithfulfable.com/wp-content/uploads/2024/02/Joshua-and-the-walls-of-Jericho-Bible-Story-1024x585.webp" alt="Walls of Jericho">
+            </div>
+
+            <h2>Assessment Questions</h2>
+
+            <h3>3-5 Years Old</h3>
+            <ul>
+                <li>1. Who led the Israelites to Jericho?</li>
+                <li>2. What did God tell Joshua to do?</li>
+                <li>3. How many days did they walk around Jericho?</li>
+                <li>4. What did the priests blow?</li>
+                <li>5. What happened when the Israelites shouted?</li>
+                <li>6. Who helped the Israelite spies?</li>
+                <li>7. Why is it important to listen to God?</li>
+            </ul>
+
+            <h3>6-7 Years Old</h3>
+            <ul>
+                <li>1. Why was Jericho a strong city?</li>
+                <li>2. What unusual battle plan did God give?</li>
+                <li>3. How did Joshua show faith?</li>
+                <li>4. What was Rahab’s role in the story?</li>
+                <li>5. What did the Israelites do on the seventh day?</li>
+                <li>6. How did the walls fall down?</li>
+                <li>7. What does this story teach about obeying God?</li>
+            </ul>
+
+            <h3>8-10 Years Old</h3>
+            <ul>
+                <li>1. Why was marching around Jericho an act of faith?</li>
+                <li>2. What were the Israelites required to do exactly?</li>
+                <li>3. How does Rahab's faith inspire us?</li>
+                <li>4. What does this story teach about trusting God's promises?</li>
+                <li>5. What lessons can we learn from Joshua's leadership?</li>
+                <li>6. Why is patience important in obeying God?</li>
+                <li>7. How does God reward obedience?</li>
+            </ul>
+
+            <h3>11-15 Years Old</h3>
+            <ul>
+                <li>1. How does the fall of Jericho show God’s power?</li>
+                <li>2. How did the Israelites' obedience affect their victory?</li>
+                <li>3. What does Rahab's rescue tell us about God's mercy?</li>
+                <li>4. Why did God give such a strange battle plan?</li>
+                <li>5. How is "faith in action" seen in this story?</li>
+                <li>6. What does the story teach us about spiritual battles?</li>
+                <li>7. How can we apply the lesson of Jericho to modern life challenges?</li>
+            </ul>
+
+            <button class="download-btn" onclick="generatePDF()">Download Worksheet (PDF)</button>
+        </div>
+    </div>
+
+<script>
+function generatePDF() {
+    const { jsPDF } = window.jspdf;
+    const doc = new jsPDF();
+    doc.setFont("times", "bold");
+    doc.setFontSize(18);
+    doc.text("Joshua and the Battle of Jericho - Victory Through Faith", 20, 20);
+    doc.text("Joshua 6", 20, 30);
+
+    let yPosition = 40;
+    const categories = [
+        { title: "3-5 Years Old", questions: [
+            "1. Who led the Israelites to Jericho?",
+            "2. What did God tell Joshua to do?",
+            "3. How many days did they walk around Jericho?",
+            "4. What did the priests blow?",
+            "5. What happened when the Israelites shouted?",
+            "6. Who helped the Israelite spies?",
+            "7. Why is it important to listen to God?"
+        ]},
+        { title: "6-7 Years Old", questions: [
+            "1. Why was Jericho a strong city?",
+            "2. What unusual battle plan did God give?",
+            "3. How did Joshua show faith?",
+            "4. What was Rahab’s role in the story?",
+            "5. What did the Israelites do on the seventh day?",
+            "6. How did the walls fall down?",
+            "7. What does this story teach about obeying God?"
+        ]},
+        { title: "8-10 Years Old", questions: [
+            "1. Why was marching around Jericho an act of faith?",
+            "2. What were the Israelites required to do exactly?",
+            "3. How does Rahab's faith inspire us?",
+            "4. What does this story teach about trusting God's promises?",
+            "5. What lessons can we learn from Joshua's leadership?",
+            "6. Why is patience important in obeying God?",
+            "7. How does God reward obedience?"
+        ]},
+        { title: "11-15 Years Old", questions: [
+            "1. How does the fall of Jericho show God’s power?",
+            "2. How did the Israelites' obedience affect their victory?",
+            "3. What does Rahab's rescue tell us about God's mercy?",
+            "4. Why did God give such a strange battle plan?",
+            "5. How is 'faith in action' seen in this story?",
+            "6. What does the story teach us about spiritual battles?",
+            "7. How can we apply the lesson of Jericho to modern life challenges?"
+        ]}
+    ];
+
+    const maxWidth = 180;
+    categories.forEach(category => {
+        doc.setFont("times", "bold");
+        doc.text(category.title, 20, yPosition);
+        yPosition += 10;
+        doc.setFont("times", "normal");
+        category.questions.forEach(q => {
+            const lines = doc.splitTextToSize(q, maxWidth);
+            doc.text(lines, 25, yPosition);
+            yPosition += lines.length * 8;
+            if (yPosition > 270) {
+                doc.addPage();
+                yPosition = 20;
+            }
+        });
+        yPosition += 5;
+    });
+    doc.save("Joshua_Battle_Jericho_Assessment.pdf");
+}
+</script>
+
+</body>
+</html>
