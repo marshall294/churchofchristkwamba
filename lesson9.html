@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Crossing the Red Sea - God Leads Us to Safety</title>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
+  <style>
+    * { box-sizing: border-box; }
+    body { font-family: 'Arial', sans-serif; margin: 0; padding: 0; background-color: #f4f4f9; color: #333; overflow-x: hidden; }
+    header { background-color: #1e90ff; color: white; padding: 20px; text-align: center; }
+    h1, h2 { margin: 0; }
+    .container { margin: 20px auto; padding: 20px; max-width: 900px; background-color: white; border-radius: 10px; box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); }
+    .media-section, .lesson-section, .assessment-section { margin: 20px 0; }
+    .media-section img, .media-section video, .media-section iframe { display: block; max-width: 100%; height: auto; margin: 10px 0; border-radius: 10px; }
+    ul { list-style-type: none; padding: 0; }
+    li { margin: 10px 0; padding: 10px; background-color: #f9f9f9; border: 1px solid #ddd; border-radius: 5px; }
+    li:hover { background-color: #f1f1f1; }
+    .download-btn { display: block; text-align: center; padding: 10px; margin-top: 20px; background-color: #007bff; color: white; text-decoration: none; border-radius: 5px; cursor: pointer; }
+    .download-btn:hover { background-color: #0056b3; }
+    footer { text-align: center; padding: 20px; margin-top: 20px; background-color: #1e90ff; color: white; }
+  </style>
+</head>
+<body>
+<header>
+  <h1>Crossing the Red Sea</h1>
+  <p>"God Leads Us to Safety."</p>
+</header>
+
+<div class="container">
+  <div class="lesson-section">
+    <h2>Lesson: Crossing the Red Sea</h2>
+    <p>After escaping Egypt, the Israelites found themselves trapped between the Red Sea and Pharaoh's army. They were afraid, but Moses told them to trust God. God performed a miracle by parting the waters, making a dry path through the sea. The Israelites crossed safely, and the pursuing Egyptians were swept away. This amazing story reminds us that God leads us, protects us, and makes a way even when things seem impossible!</p>
+
+    <ul>
+      <li><b>The Israelites Escape Egypt:</b>
+        <p><i>Exodus 14:5-9</i>: Pharaoh changes his mind and chases after the Israelites.</p>
+      </li>
+
+      <li><b>The People Are Afraid:</b>
+        <p><i>Exodus 14:10-12</i>: The Israelites cry out to Moses when they see the Egyptians coming.</p>
+      </li>
+
+      <li><b>God Makes a Way:</b>
+        <p><i>Exodus 14:21-22</i>: Moses stretches out his hand, and God parts the Red Sea.</p>
+      </li>
+
+      <li><b>Victory!</b>
+        <p><i>Exodus 14:29-31</i>: The Israelites safely walk through the sea, and they see God's great power.</p>
+      </li>
+    </ul>
+
+    <div class="media-section">
+      <h2>Watch and Learn</h2>
+      <iframe width="560" height="315" src="https://www.youtube.com/embed/FgJ3EJwI8fM" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+      <img src="https://www.lambsongs.co.nz/wp-content/uploads/2020/10/Red-Sea-Parting.jpg" alt="Moses Parts the Red Sea" />
+      <img src="https://biblepathwayadventures.com/wp-content/uploads/2021/02/Red-Sea-Crossing-Coloring-Page.jpg" alt="Crossing the Red Sea Coloring Page" />
+    </div>
+
+    <h2>Assessment Questions</h2>
+
+    <h3>3-5 Years Old</h3>
+    <ul>
+      <li>1. Who was chasing the Israelites?</li>
+      <li>2. What was in front of the Israelites?</li>
+      <li>3. What did God do to the sea?</li>
+      <li>4. Who led the Israelites across the sea?</li>
+      <li>5. What happened to the Egyptian army?</li>
+      <li>6. Who keeps us safe today?</li>
+    </ul>
+
+    <h3>6-7 Years Old</h3>
+    <ul>
+      <li>1. Why were the Israelites afraid?</li>
+      <li>2. What did Moses tell the people to do?</li>
+      <li>3. How did God part the Red Sea?</li>
+      <li>4. What lesson can we learn about trusting God?</li>
+      <li>5. How did the Israelites know God was powerful?</li>
+      <li>6. How can we trust God when we are scared?</li>
+    </ul>
+
+    <h3>8-10 Years Old</h3>
+    <ul>
+      <li>1. How did the Israelites feel when they saw Pharaoh’s army?</li>
+      <li>2. What does Moses’ faith teach us?</li>
+      <li>3. Why do you think God led the people through the Red Sea?</li>
+      <li>4. How did God protect His people during the crossing?</li>
+      <li>5. What can we do when we face "impossible" situations?</li>
+      <li>6. How does God show His power in our lives today?</li>
+    </ul>
+
+    <h3>11-15 Years Old</h3>
+    <ul>
+      <li>1. What does the Red Sea crossing teach about God’s deliverance?</li>
+      <li>2. How is God's power over nature shown here?</li>
+      <li>3. What role did obedience play in the Israelites' rescue?</li>
+      <li>4. How can this story encourage us during tough times?</li>
+      <li>5. What happens when we trust God instead of giving into fear?</li>
+      <li>6. How does God still lead His people to safety today?</li>
+    </ul>
+
+    <button class="download-btn" onclick="generatePDF()">Download Worksheet (PDF)</button>
+  </div>
+
+  <script>
+    function generatePDF() {
+      const { jsPDF } = window.jspdf;
+      const doc = new jsPDF();
+
+      doc.setFont("times", "bold");
+      doc.setFontSize(18);
+      doc.text("Crossing the Red Sea - God Leads Us to Safety", 20, 20);
+      doc.text("Exodus 14", 20, 30);
+
+      let yPosition = 40;
+      const categories = [
+        { title: "3-5 Years Old", questions: [
+          "1. Who was chasing the Israelites?",
+          "2. What was in front of the Israelites?",
+          "3. What did God do to the sea?",
+          "4. Who led the Israelites across the sea?",
+          "5. What happened to the Egyptian army?",
+          "6. Who keeps us safe today?"
+        ]},
+        { title: "6-7 Years Old", questions: [
+          "1. Why were the Israelites afraid?",
+          "2. What did Moses tell the people to do?",
+          "3. How did God part the Red Sea?",
+          "4. What lesson can we learn about trusting God?",
+          "5. How did the Israelites know God was powerful?",
+          "6. How can we trust God when we are scared?"
+        ]},
+        { title: "8-10 Years Old", questions: [
+          "1. How did the Israelites feel when they saw Pharaoh’s army?",
+          "2. What does Moses’ faith teach us?",
+          "3. Why do you think God led the people through the Red Sea?",
+          "4. How did God protect His people during the crossing?",
+          "5. What can we do when we face 'impossible' situations?",
+          "6. How does God show His power in our lives today?"
+        ]},
+        { title: "11-15 Years Old", questions: [
+          "1. What does the Red Sea crossing teach about God’s deliverance?",
+          "2. How is God's power over nature shown here?",
+          "3. What role did obedience play in the Israelites' rescue?",
+          "4. How can this story encourage us during tough times?",
+          "5. What happens when we trust God instead of giving into fear?",
+          "6. How does God still lead His people to safety today?"
+        ]}
+      ];
+
+      const maxWidth = 180;
+
+      categories.forEach(category => {
+        doc.setFont("times", "bold");
+        doc.text(category.title, 20, yPosition);
+        yPosition += 10;
+        doc.setFont("times", "normal");
+
+        category.questions.forEach(q => {
+          const lines = doc.splitTextToSize(q, maxWidth);
+          doc.text(lines, 25, yPosition);
+          yPosition += lines.length * 8;
+
+          if (yPosition > 270) {
+            doc.addPage();
+            yPosition = 20;
+          }
+        });
+        yPosition += 5;
+      });
+
+      doc.save("Crossing_the_Red_Sea_Assessment.pdf");
+    }
+  </script>
+</div>
+
+<footer>
+  <p>© 2025 Bible Stories for Kids</p>
+</footer>
+</body>
+</html>
