@@ -1,155 +1,199 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Moses and the Burning Bush - God Calls Us to His Purpose</title>
-    <style>
-        * {
-            box-sizing: border-box;
-        }
-
-        body {
-            font-family: 'Arial', sans-serif;
-            margin: 0;
-            padding: 0;
-            background-color: #f4f4f9;
-            color: #333;
-            overflow-x: hidden;
-        }
-
-        header {
-            background-color: #8B0000;
-            color: white;
-            padding: 20px;
-            text-align: center;
-        }
-
-        h1, h2 {
-            margin: 0;
-        }
-
-        .container {
-            margin: 20px auto;
-            padding: 20px;
-            max-width: 900px;
-            background-color: white;
-            border-radius: 10px;
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-        }
-
-        .media-section, .lesson-section, .assessment-section {
-            margin: 20px 0;
-        }
-
-        .media-section img, 
-        .media-section video, 
-        .media-section iframe {
-            display: block;
-            max-width: 100%;
-            height: auto;
-            margin: 10px 0;
-            border-radius: 10px;
-        }
-
-        ul {
-            list-style-type: none;
-            padding: 0;
-        }
-
-        li {
-            margin: 10px 0;
-            padding: 10px;
-            background-color: #f9f9f9;
-            border: 1px solid #ddd;
-            border-radius: 5px;
-        }
-
-        li:hover {
-            background-color: #f1f1f1;
-        }
-
-        footer {
-            text-align: center;
-            padding: 20px;
-            margin-top: 20px;
-            background-color: #8B0000;
-            color: white;
-        }
-    </style>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Moses and the Burning Bush - God Calls Us to His Purpose</title>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
+  <style>
+    * { box-sizing: border-box; }
+    body { font-family: 'Arial', sans-serif; margin: 0; padding: 0; background-color: #f4f4f9; color: #333; overflow-x: hidden; }
+    header { background-color: #6A5ACD; color: white; padding: 20px; text-align: center; }
+    h1, h2 { margin: 0; }
+    .container { margin: 20px auto; padding: 20px; max-width: 900px; background-color: white; border-radius: 10px; box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); }
+    .media-section, .lesson-section, .assessment-section { margin: 20px 0; }
+    .media-section img, .media-section video, .media-section iframe { display: block; max-width: 100%; height: auto; margin: 10px 0; border-radius: 10px; }
+    ul { list-style-type: none; padding: 0; }
+    li { margin: 10px 0; padding: 10px; background-color: #f9f9f9; border: 1px solid #ddd; border-radius: 5px; }
+    li:hover { background-color: #f1f1f1; }
+    .download-btn { display: block; text-align: center; padding: 10px; margin-top: 20px; background-color: #28a745; color: white; text-decoration: none; border-radius: 5px; cursor: pointer; }
+    .download-btn:hover { background-color: #218838; }
+    footer { text-align: center; padding: 20px; margin-top: 20px; background-color: #6A5ACD; color: white; }
+  </style>
 </head>
 <body>
-    <header>
-        <h1>Moses and the Burning Bush</h1>
-        <p>"God Calls Us to His Purpose"</p>
-    </header>
 
-    <div class="container">
-        <!-- Lesson Content -->
-        <div class="lesson-section">
-            <h2>Lesson: God Calls Moses</h2>
-            <p>While Moses was tending sheep in the wilderness, he saw an incredible sight: a bush that was on fire but not burning up. God spoke to Moses from the bush and told him to take off his sandals because he was standing on holy ground. God called Moses to lead His people out of slavery in Egypt. Even though Moses felt unworthy and afraid, God promised to be with him. This story reminds us that God calls us to fulfill His purpose, and He will equip us for the task.</p>
-            <ul>
-                <li><b>The Encounter:</b> Moses saw a burning bush that did not burn up.</li>
-                <li><b>God’s Call:</b> God called Moses to lead the Israelites out of Egypt.</li>
-                <li><b>Holy Ground:</b> Moses removed his sandals as a sign of respect for God’s presence.</li>
-                <li><b>Moses’ Doubts:</b> Moses felt unworthy and unsure, but God reassured him.</li>
-                <li><b>God’s Promise:</b> God promised to be with Moses and gave him signs to show His power.</li>
-            </ul>
-        </div>
+<header>
+  <h1>Moses and the Burning Bush</h1>
+  <p>"God Calls Us to His Purpose"</p>
+</header>
 
-        <!-- Media Section -->
-        <div class="media-section">
-            <h2>Watch and Learn</h2>
-            <p>Here is a video and images to help you understand the story of Moses and the Burning Bush:</p>
-            <iframe width="560" height="315" src="https://www.youtube.com/embed/CnOdID6wJPs" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-            <img src="https://upload.wikimedia.org/wikipedia/commons/3/36/Moses_and_the_Burning_Bush.jpg" alt="Moses and the Burning Bush">
-            <img src="https://biblefunforkids.com/images/MosesBurningBush2.png" alt="Moses removing his sandals at the Burning Bush">
-        </div>
+<div class="container">
 
-        <!-- Assessment Section -->
-        <div class="assessment-section">
-            <h2>Assessment Questions</h2>
-            <p>Answer the questions based on your age group:</p>
+  <div class="lesson-section">
+    <h2>Lesson: Moses and the Burning Bush</h2>
+    <p>Moses was tending sheep in the desert when he saw a bush that was on fire but didn’t burn up. As he approached, God called to him from the bush and gave him a special mission: to rescue the Israelites from slavery in Egypt. Moses felt afraid and unsure, but God promised to be with him. This story shows us that God has a purpose for each of us and that He will equip us for what He calls us to do.</p>
 
-            <!-- Questions for 3-5 years old -->
-            <h3>3-5 Years Old</h3>
-            <ul>
-                <li>What did Moses see in the wilderness?</li>
-                <li>Who spoke to Moses from the bush?</li>
-                <li>What did God tell Moses to do?</li>
-                <li>What did Moses take off to stand on holy ground?</li>
-            </ul>
+    <ul>
+      <li><b>The Encounter:</b> God appears to Moses through a burning bush.
+        <p><i>Exodus 3:2-3</i>: "There the angel of the Lord appeared to him in flames of fire from within a bush. Moses saw that though the bush was on fire it did not burn up. So Moses thought, 'I will go over and see this strange sight—why the bush does not burn up.'"</p>
+      </li>
 
-            <!-- Questions for 6-7 years old -->
-            <h3>6-7 Years Old</h3>
-            <ul>
-                <li>Why was the burning bush special?</li>
-                <li>What did God ask Moses to do?</li>
-                <li>How did God reassure Moses?</li>
-            </ul>
+      <li><b>The Call:</b> God calls Moses to deliver His people from Egypt.
+        <p><i>Exodus 3:10</i>: "So now, go. I am sending you to Pharaoh to bring my people the Israelites out of Egypt."</p>
+      </li>
 
-            <!-- Questions for 8-10 years old -->
-            <h3>8-10 Years Old</h3>
-            <ul>
-                <li>Why did Moses feel unworthy to answer God’s call?</li>
-                <li>How did God show Moses that He would be with him?</li>
-                <li>What does this story teach us about following God’s purpose?</li>
-            </ul>
+      <li><b>The Doubt:</b> Moses feels unworthy and afraid to accept God’s call.
+        <p><i>Exodus 3:11</i>: "But Moses said to God, 'Who am I that I should go to Pharaoh and bring the Israelites out of Egypt?'"</p>
+      </li>
 
-            <!-- Questions for 11-15 years old -->
-            <h3>11-15 Years Old</h3>
-            <ul>
-                <li>What does the burning bush symbolize about God’s power and presence?</li>
-                <li>How did God prepare Moses for the task ahead?</li>
-                <li>What does this story teach us about overcoming fear when following God’s call?</li>
-                <li>How can we apply Moses’ obedience to our lives today?</li>
-            </ul>
-        </div>
+      <li><b>The Assurance:</b> God promises His presence and power.
+        <p><i>Exodus 3:12</i>: "And God said, 'I will be with you. And this will be the sign to you that it is I who have sent you: When you have brought the people out of Egypt, you will worship God on this mountain.'"</p>
+      </li>
+    </ul>
+
+    <!-- Media Section -->
+    <div class="media-section">
+      <h2>Watch and Learn</h2>
+      <p>Here is a video and images to help you understand the story of Moses and the Burning Bush:</p>
+      <iframe width="560" height="315" src="https://www.youtube.com/embed/OXanW2u5JR8" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+      <img src="https://biblepathwayadventures.com/wp-content/uploads/2022/02/Moses-Burning-Bush-Free-Bible-Story.png" alt="Moses and the burning bush">
+      <img src="https://cdn.pixabay.com/photo/2020/01/30/13/51/burning-bush-4808128_1280.jpg" alt="Burning bush">
     </div>
 
-    <footer>
-        <p>&copy; 2025 Children's Ministry | Moses and the Burning Bush Lesson</p>
-    </footer>
+    <h2>Assessment Questions</h2>
+
+    <!-- 3-5 Years Old -->
+    <h3>3-5 Years Old</h3>
+    <ul>
+      <li>1. What did Moses see in the desert?</li>
+      <li>2. Who spoke to Moses from the bush?</li>
+      <li>3. What special job did God give Moses?</li>
+      <li>4. How did Moses feel when God called him?</li>
+      <li>5. Who promised to help Moses?</li>
+      <li>6. Why was the bush so amazing?</li>
+      <li>7. Why is it important to listen to God?</li>
+    </ul>
+
+    <!-- 6-7 Years Old -->
+    <h3>6-7 Years Old</h3>
+    <ul>
+      <li>1. What made the burning bush different from other bushes?</li>
+      <li>2. What mission did God give to Moses?</li>
+      <li>3. Why was Moses afraid?</li>
+      <li>4. How did God encourage Moses?</li>
+      <li>5. What does Moses’ story tell us about trusting God?</li>
+      <li>6. How do we know God is with us when He gives us a mission?</li>
+      <li>7. Why does God call people to do His work?</li>
+    </ul>
+
+    <!-- 8-10 Years Old -->
+    <h3>8-10 Years Old</h3>
+    <ul>
+      <li>1. How did Moses react when he saw the burning bush?</li>
+      <li>2. Why was Moses hesitant to accept God’s call?</li>
+      <li>3. What does this story teach us about God's presence?</li>
+      <li>4. How does God prepare us for the tasks He gives us?</li>
+      <li>5. What should we do when we feel afraid to follow God's plan?</li>
+      <li>6. How did God show His power through Moses later?</li>
+      <li>7. How can we trust God with our purpose today?</li>
+    </ul>
+
+    <!-- 11-15 Years Old -->
+    <h3>11-15 Years Old</h3>
+    <ul>
+      <li>1. What qualities did God see in Moses even when Moses doubted himself?</li>
+      <li>2. How does Moses' encounter with the burning bush show God's holiness?</li>
+      <li>3. Why is it important to trust God's calling even when we feel weak?</li>
+      <li>4. What excuses did Moses give to God, and how did God respond?</li>
+      <li>5. How does this story teach us about God's patience and assurance?</li>
+      <li>6. How can we apply Moses’ story to our own calling and purpose?</li>
+      <li>7. What does Exodus 3 teach us about God's character?</li>
+    </ul>
+
+    <button class="download-btn" onclick="generatePDF()">Download Worksheet (PDF)</button>
+  </div>
+</div>
+
+<script>
+function generatePDF() {
+  const { jsPDF } = window.jspdf;
+  const doc = new jsPDF();
+
+  // Title
+  doc.setFont("times", "bold");
+  doc.setFontSize(18);
+  doc.text("Moses and the Burning Bush - God Calls Us to His Purpose", 20, 20);
+  doc.text("Exodus 3", 20, 30);
+
+  let yPosition = 40;
+  const categories = [
+    { title: "3-5 Years Old", questions: [
+      "1. What did Moses see in the desert?",
+      "2. Who spoke to Moses from the bush?",
+      "3. What special job did God give Moses?",
+      "4. How did Moses feel when God called him?",
+      "5. Who promised to help Moses?",
+      "6. Why was the bush so amazing?",
+      "7. Why is it important to listen to God?"
+    ]},
+    { title: "6-7 Years Old", questions: [
+      "1. What made the burning bush different from other bushes?",
+      "2. What mission did God give to Moses?",
+      "3. Why was Moses afraid?",
+      "4. How did God encourage Moses?",
+      "5. What does Moses’ story tell us about trusting God?",
+      "6. How do we know God is with us when He gives us a mission?",
+      "7. Why does God call people to do His work?"
+    ]},
+    { title: "8-10 Years Old", questions: [
+      "1. How did Moses react when he saw the burning bush?",
+      "2. Why was Moses hesitant to accept God’s call?",
+      "3. What does this story teach us about God's presence?",
+      "4. How does God prepare us for the tasks He gives us?",
+      "5. What should we do when we feel afraid to follow God's plan?",
+      "6. How did God show His power through Moses later?",
+      "7. How can we trust God with our purpose today?"
+    ]},
+    { title: "11-15 Years Old", questions: [
+      "1. What qualities did God see in Moses even when Moses doubted himself?",
+      "2. How does Moses' encounter with the burning bush show God's holiness?",
+      "3. Why is it important to trust God's calling even when we feel weak?",
+      "4. What excuses did Moses give to God, and how did God respond?",
+      "5. How does this story teach us about God's patience and assurance?",
+      "6. How can we apply Moses’ story to our own calling and purpose?",
+      "7. What does Exodus 3 teach us about God's character?"
+    ]}
+  ];
+
+  const maxWidth = 180;
+
+  categories.forEach(category => {
+    doc.setFont("times", "bold");
+    doc.text(category.title, 20, yPosition);
+    yPosition += 10;
+    doc.setFont("times", "normal");
+
+    category.questions.forEach(q => {
+      const lines = doc.splitTextToSize(q, maxWidth);
+      doc.text(lines, 25, yPosition);
+      yPosition += lines.length * 8;
+
+      if (yPosition > 270) {
+        doc.addPage();
+        yPosition = 20;
+      }
+    });
+    yPosition += 5;
+  });
+
+  doc.save("Moses_Burning_Bush_Assessment.pdf");
+}
+</script>
+
+<footer>
+  <p>&copy; 2025 Bible Lessons</p>
+</footer>
+
 </body>
 </html>
