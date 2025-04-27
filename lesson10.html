@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>The Ten Commandments - Living According to God’s Will</title>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
+  <style>
+    * { box-sizing: border-box; }
+    body { font-family: 'Arial', sans-serif; margin: 0; padding: 0; background-color: #f4f4f9; color: #333; overflow-x: hidden; }
+    header { background-color: #28a745; color: white; padding: 20px; text-align: center; }
+    h1, h2 { margin: 0; }
+    .container { margin: 20px auto; padding: 20px; max-width: 900px; background-color: white; border-radius: 10px; box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); }
+    .media-section, .lesson-section, .assessment-section { margin: 20px 0; }
+    .media-section img, .media-section video, .media-section iframe { display: block; max-width: 100%; height: auto; margin: 10px 0; border-radius: 10px; }
+    ul { list-style-type: none; padding: 0; }
+    li { margin: 10px 0; padding: 10px; background-color: #f9f9f9; border: 1px solid #ddd; border-radius: 5px; }
+    li:hover { background-color: #f1f1f1; }
+    .download-btn { display: block; text-align: center; padding: 10px; margin-top: 20px; background-color: #007bff; color: white; text-decoration: none; border-radius: 5px; cursor: pointer; }
+    .download-btn:hover { background-color: #0056b3; }
+    footer { text-align: center; padding: 20px; margin-top: 20px; background-color: #28a745; color: white; }
+  </style>
+</head>
+<body>
+<header>
+  <h1>The Ten Commandments</h1>
+  <p>"Living According to God’s Will."</p>
+</header>
+
+<div class="container">
+  <div class="lesson-section">
+    <h2>Lesson: The Ten Commandments</h2>
+    <p>After leading the Israelites out of Egypt, God called Moses up to Mount Sinai. There, God gave him Ten Commandments — special rules for how to live and love God and others. These commandments are a gift that show us the best way to live according to God's will. When we obey them, we honor God and help create a kinder, better world!</p>
+
+    <ul>
+      <li><b>God Prepares the People:</b>
+        <p><i>Exodus 19:3-8</i>: God tells Moses to prepare the Israelites for His special message.</p>
+      </li>
+
+      <li><b>Meeting God on the Mountain:</b>
+        <p><i>Exodus 19:16-20</i>: God's presence covers Mount Sinai with thunder, lightning, and smoke!</p>
+      </li>
+
+      <li><b>The Ten Commandments:</b>
+        <p><i>Exodus 20:1-17</i>: God gives Moses the Ten Commandments for all the people.</p>
+      </li>
+
+      <li><b>The Promise:</b>
+        <p><i>Exodus 24:3-8</i>: The people promise to follow all that God has commanded.</p>
+      </li>
+    </ul>
+
+    <div class="media-section">
+      <h2>Watch and Learn</h2>
+      <iframe width="560" height="315" src="https://www.youtube.com/embed/V6QYoWEmXLI?start=4" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+      <img src="https://lifehopeandtruth.com/cache/images/10-Commandments-List_1_1200_857_80.jpg" alt="Moses and the Ten Commandments" />
+      <img src="https://media.swncdn.com/via/images/2024/05/21/35916/35916-gettyimages-1362102345_source_file.jpg" alt="Ten Commandments Coloring Page" />
+    </div>
+
+    <h2>Assessment Questions</h2>
+
+    <h3>3-5 Years Old</h3>
+    <ul>
+      <li>1. Who gave Moses the Ten Commandments?</li>
+      <li>2. Where did Moses meet God?</li>
+      <li>3. What are the Ten Commandments?</li>
+      <li>4. Why do we follow God's rules?</li>
+      <li>5. Name one of God's rules!</li>
+      <li>6. Who helps us obey God's commandments today?</li>
+    </ul>
+
+    <h3>6-7 Years Old</h3>
+    <ul>
+      <li>1. Why did God give us the Ten Commandments?</li>
+      <li>2. What did the mountain look like when God came down?</li>
+      <li>3. How do the Ten Commandments help us love others?</li>
+      <li>4. What does it mean to honor your parents?</li>
+      <li>5. How can we show we love God?</li>
+      <li>6. Why is it important to tell the truth?</li>
+    </ul>
+
+    <h3>8-10 Years Old</h3>
+    <ul>
+      <li>1. How do the first four commandments teach us to love God?</li>
+      <li>2. How do the last six commandments teach us to love people?</li>
+      <li>3. Why did God speak with thunder and lightning?</li>
+      <li>4. How can we obey God's commandments in our daily lives?</li>
+      <li>5. What happens when we break God's commandments?</li>
+      <li>6. How does Jesus help us live according to God's will?</li>
+    </ul>
+
+    <h3>11-15 Years Old</h3>
+    <ul>
+      <li>1. Why are the Ten Commandments still important today?</li>
+      <li>2. What does the giving of the Law reveal about God's character?</li>
+      <li>3. How do the commandments show the relationship between faith and actions?</li>
+      <li>4. Why did the people promise to obey God?</li>
+      <li>5. How can understanding the Ten Commandments deepen our walk with God?</li>
+      <li>6. How can we rely on the Holy Spirit to live out God's will?</li>
+    </ul>
+
+    <button class="download-btn" onclick="generatePDF()">Download Worksheet (PDF)</button>
+  </div>
+
+  <script>
+    function generatePDF() {
+      const { jsPDF } = window.jspdf;
+      const doc = new jsPDF();
+
+      doc.setFont("times", "bold");
+      doc.setFontSize(18);
+      doc.text("The Ten Commandments - Living According to God’s Will", 20, 20);
+      doc.text("Exodus 19–20", 20, 30);
+
+      let yPosition = 40;
+      const categories = [
+        { title: "3-5 Years Old", questions: [
+          "1. Who gave Moses the Ten Commandments?",
+          "2. Where did Moses meet God?",
+          "3. What are the Ten Commandments?",
+          "4. Why do we follow God's rules?",
+          "5. Name one of God's rules!",
+          "6. Who helps us obey God's commandments today?"
+        ]},
+        { title: "6-7 Years Old", questions: [
+          "1. Why did God give us the Ten Commandments?",
+          "2. What did the mountain look like when God came down?",
+          "3. How do the Ten Commandments help us love others?",
+          "4. What does it mean to honor your parents?",
+          "5. How can we show we love God?",
+          "6. Why is it important to tell the truth?"
+        ]},
+        { title: "8-10 Years Old", questions: [
+          "1. How do the first four commandments teach us to love God?",
+          "2. How do the last six commandments teach us to love people?",
+          "3. Why did God speak with thunder and lightning?",
+          "4. How can we obey God's commandments in our daily lives?",
+          "5. What happens when we break God's commandments?",
+          "6. How does Jesus help us live according to God's will?"
+        ]},
+        { title: "11-15 Years Old", questions: [
+          "1. Why are the Ten Commandments still important today?",
+          "2. What does the giving of the Law reveal about God's character?",
+          "3. How do the commandments show the relationship between faith and actions?",
+          "4. Why did the people promise to obey God?",
+          "5. How can understanding the Ten Commandments deepen our walk with God?",
+          "6. How can we rely on the Holy Spirit to live out God's will?"
+        ]}
+      ];
+
+      const maxWidth = 180;
+
+      categories.forEach(category => {
+        doc.setFont("times", "bold");
+        doc.text(category.title, 20, yPosition);
+        yPosition += 10;
+        doc.setFont("times", "normal");
+
+        category.questions.forEach(q => {
+          const lines = doc.splitTextToSize(q, maxWidth);
+          doc.text(lines, 25, yPosition);
+          yPosition += lines.length * 8;
+
+          if (yPosition > 270) {
+            doc.addPage();
+            yPosition = 20;
+          }
+        });
+        yPosition += 5;
+      });
+
+      doc.save("Ten_Commandments_Assessment.pdf");
+    }
+  </script>
+</div>
+
+<footer>
+  <p>© 2025 Bible Stories for Kids</p>
+</footer>
+</body>
+</html>
