@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>The Church of Christ Sermons</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <style>
+    iframe {
+      width: 100%;
+      height: 100vh;
+      border: none;
+    }
+    body {
+      margin: 0;
+      padding: 0;
+    }
+  </style>
+</head>
+<body class="bg-gray-100">
+
+  <!-- Header -->
+  <header class="bg-blue-900 text-white py-4 px-6 fixed top-0 w-full z-50 shadow-md flex justify-between items-center">
+    <h1 class="text-xl font-bold">The Church of Christ Sermons</h1>
+    <nav class="space-x-4 text-sm hidden md:block">
+      <a href="#" class="hover:underline">Home</a>
+      <a href="#" class="hover:underline">About</a>
+      <a href="#" class="hover:underline">Contact</a>
+    </nav>
+  </header>
+
+  <!-- PDF Fullscreen Viewer -->
+  <main class="pt-20">
+    <iframe 
+      src="As_a_Christian_Worldly_Should_Not_Be_Found_In_Me.pdf" 
+      allowfullscreen>
+    </iframe>
+  </main>
+
+</body>
+</html>
